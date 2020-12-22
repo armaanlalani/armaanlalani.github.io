@@ -6,11 +6,12 @@ if(navBarToggle){
       });
 }
 
+/*
 var slideIndex = 1;
 showSlides(slideIndex);
 var next = document.getElementsByClassName("next");
 var prev = document.getElementsByClassName("prev");
-
+*/
 
 var submit = document.getElementById("submit")
 var morebutton = document.getElementById("mimore")
@@ -212,6 +213,7 @@ prev[0].onclick = function(){
   showSlides(slideIndex += -1);
 }
 
+/*
 function currentSlide(n) {
   showSlides(slideIndex = n);
 }
@@ -231,6 +233,7 @@ function showSlides(n) {
   slides[slideIndex-1].style.display = "block";  
   dots[slideIndex-1].className += " active";
 }
+*/
 
 var mybutton = document.getElementById("myBtn");
 
