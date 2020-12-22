@@ -82,9 +82,9 @@
             <div class="fc">
                 <button class="modbutton">Introduction to Machine Intelligence</button>
                 <button class="modbutton">Introduction to Image Analysis</button>
-                <button class="modbutton">Signal Analysis and Communication</button>
+                <button class="modbutton">Matrix Algebra and Optimization</button>
                 <button class="modbutton">Foundations of Computing</button>
-                <button class="modbutton">Computer Systems Programming</button>
+                <button class="modbutton">Neural Networks and Deep Learning</button>
                 <button class="modbutton">Systems Software</button>
                 <button class="modbutton">Probabilistic Reasoning</button>
                 <button class="modbutton">Introduction to Machine Learning</button>
@@ -134,9 +134,8 @@
         <article id="projects">
             <h2 id= "projectstitle" class="titles">projects</h2>
             <br>
-
+            <!--
             <div class="slideshow-container">
-
               <div class="mySlides fade">
                 <div class="numbertext">1 / 8</div>
                 <img src="slide1.png" style="width:100%">
@@ -201,7 +200,34 @@
                 <span class="dot" onclick="currentSlide(8)"></span> 
 
               </div>
-
+            -->
+            <h3 id="subtitle" class="titles">Music Genre Predictor</h3>
+            <br>
+            <h4 id="subtitle2" class="titles">Winter 2020</h4>
+            <br>
+            <p class="paragraph">The course Introduction to Machine Intelligence provided me with the opportunity to collaborate with a peer on designing a project of our choice. My team member and I decided to pursue a project on predicting the genre of music using mel-spectrograms.</p>
+            <p class="paragraph">Data Collection: The data collection process consisted of us collecting 30 second samples of various songs belonging to 7 genres of music. This was done using the Spotify API, the package youtube_dl, and a script that collected a random 30 second sample of the mp3 files. Following this, we utilized the library librosa to convert each 30 second sample into a mel-spectrogram (essentially an image representation of a music file in the frequency domain) which would then be passed through a neural network for training.</p>
+            <p class="paragraph">Model Architecture: I lead the effort to both design the models used for training, which consisted of a baseline CNN model, a more advanced CNN model, and finally a CRNN (Convolutional Recurrent Neural Network) model. Based on hyperparameter optimization, we were able to acheieve a test accuracy of roughly 79% compared to just 14% of guessing considering there were 7 music genres used. Visit the links below to review our project report and code.</p>
+            <div id="pid">
+              <button class="modbutton" onclick="window.open('Final Report.pdf')">Project Report</button>
+              <br>
+              <button class="modbutton" onclick="window.open('https://github.com/armaanlalani/Music-Genre-Classifier')">Code</button>
+            </div>
+            <br>
+            <h3 id="subtitle" class="titles">3D Reconstruction</h3>
+            <br>
+            <h4 id="subtitle2" class="titles">Winter 2020</h4>
+            <br>
+            <p class="paragraph">The course Introduction to Image Analysis provided me with the opportunity to collaborate with two peers on reconstructing a 3D model from various 2D images. There was flexibility on how we chose to tackle this problem, and we originally researched using neural networks. However, there were various issues with this method including lack of an appropriate dataset containing both 2D images and 3D models and ground truth approximations using voxels would have been extremely difficult.</p>
+            <p class="paragraph">As a result, our team pivoted to implementing reconstruction using stereo vision. This was done by applying various techniques including image rectification, developing disparity maps, utilizing epipoles, generating depth maps, and several others. This was done as a result of utilizing OpenCV functions as well as developing some of our own to assist with debugging. While the end result was not the most accurate, the project provided me with the opportuntiy to consolidate various techniques learned throughout the semester and enhanced my ability in utilizing OpenCV. Visit the links below to view our project report and code.</p>
+            <div id="pid">
+              <img src="3d pc.png">
+              <br>
+              <button class="modbutton" onclick="window.open('CSC420 Final Report.pdf')">Project Report</button>
+              <br>
+              <button class="modbutton" onclick="window.open('https://github.com/armaanlalani/3D-Reconstruction')">Code</button>
+            </div>
+            <br>
             <h3 id="subtitle" class="titles">Microsoft Machine Learning</h3>
             <br>
             <h4 id="subtitle2" class="titles">Summer 2020</h4>

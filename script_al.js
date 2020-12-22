@@ -157,27 +157,27 @@ btn[11].onclick = function(){
 
 btn[12].onclick = function(){
   modal.style.display = "block";
-  mod.innerHTML = "<h2 class='titles'>Introduction to Machine Intelligence</h2><p>Not complete yet, more information coming...</p>"
+  mod.innerHTML = "<h2 class='titles'>Introduction to Machine Intelligence</h2><p>An introductory course on neural networks and applying them to various problems. Course content covered topics such as batch normalization, types of loss functions and optimizers, softmax, momentum, autoencoders, and various types of neural networks (CNN, RNN, GAN).</p><p>The course also provided the opportunity to apply these concepts to a series of assignments and a final project (more information in projects section). Course assignents included binary classifiers with an MLP, image classification for sign language, and determining sentence objectivity, all of which can be found on my Github."
 }
 
 btn[13].onclick = function(){
   modal.style.display = "block";
-  mod.innerHTML = "<h2 class='titles'>Introduction to Image Analysis</h2><p>Not complete yet, more information coming...</p>"
+  mod.innerHTML = "<h2 class='titles'>Introduction to Image Analysis</h2><p>An elective course that focused on a variety of concepts relating to image manipulation and analysis including linear filter, edge detection, keypoint detection, local descriptors, homography, stereo vision, and severl others. The course provided me with the opportunity to work on a project with two other peers on 3D reconstruction from various 2D images, which is explained in depth in the project section. I also had the opportunity to work on various assignments that allowed me to apply course concepts including object edge detection, seam carving of images, optical flow between images, and several others all of which can be found on my Github.</p>"
 }
 
 btn[14].onclick = function(){
   modal.style.display = "block";
-  mod.innerHTML = "<h2 class='titles'>Signal Analysis and Communication</h2><p>Not complete yet, more information coming...</p>"
+  mod.innerHTML = "<h2 class='titles'>Matrix Algebra and Optimization</h2><p>An extremely interesting course on the uses of matrices for a variety of real-world problems and their application to Machine Intelligence. Course concepts included spectral decomposition, SVD (singular value decomposition), linear and quadratic programming, convex sets and functions, and several others. The course provided me with the opportunity to apply these concepts to a variety of intriguing assignments dealing with problems such as portfolio optimmization, eigenfaces, image compression, and various others. Click on the links below to learn more about these projects.</p><p><a href='PS1.pdf' download target='_blank'>Problem Set 1, </a><a href='PS2.pdf' download target='_blank'>Problem Set 2, </a><a href='PS3.pdf' download target='_blank'>Problem Set 3, </a><a href='PS4.pdf' download target='_blank'>Problem Set 4, </a><a href='PS5.pdf' download target='_blank'>Problem Set 5, </a><a href='PS6.pdf' download target='_blank'>and Problem Set 6.</a></p>"
 }
 
 btn[15].onclick = function(){
   modal.style.display = "block";
-  mod.innerHTML = "<h2 class='titles'>Foundations of Computing</h2><p>Not complete yet, more information coming...</p>"
+  mod.innerHTML = "<h2 class='titles'>Foundations of Computing</h2><p>A course that built on various concepts from the Data Structures and Algorithms course taught during first year. The course went into depth on a number of concepts including various sorting algorithms, graph theory, hash tables, splay trees, greedy algorithms, dynamic programming, ammortized analysis, maximum flow, theory of automata, NP completeness, and various others.</p>"
 }
 
 btn[16].onclick = function(){
   modal.style.display = "block";
-  mod.innerHTML = "<h2 class='titles'>Computer Systems Programming</h2><p>Not complete yet, more information coming...</p>"
+  mod.innerHTML = "<h2 class='titles'>Neural Networks and Deep Learning</h2><p>Not complete yet, more information coming...</p>"
 }
 
 btn[17].onclick = function(){
