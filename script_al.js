@@ -158,7 +158,7 @@ btn[11].onclick = function(){
 
 btn[12].onclick = function(){
   modal.style.display = "block";
-  mod.innerHTML = "<h2 class='titles'>Introduction to Machine Intelligence</h2><p>An introductory course on neural networks and applying them to various problems. Course content covered topics such as batch normalization, types of loss functions and optimizers, softmax, momentum, autoencoders, and various types of neural networks (CNN, RNN, GAN).</p><p>The course also provided the opportunity to apply these concepts to a series of assignments and a final project (more information in projects section). Course assignents included binary classifiers with an MLP, image classification for sign language, and determining sentence objectivity, all of which can be found on my Github."
+  mod.innerHTML = "<h2 class='titles'>Introduction to Machine Intelligence</h2><p>An introductory course on neural networks and applying them to various problems. Course content covered topics such as batch normalization, types of loss functions and optimizers, softmax, momentum, autoencoders, and various types of neural networks (CNN, RNN, GAN).</p><p>The course also provided the opportunity to apply these concepts to a series of assignments and a final project (more information in projects section). Course assignments included binary classifiers with an MLP, image classification for sign language, and determining sentence objectivity, all of which can be found on my Github."
 }
 
 btn[13].onclick = function(){
