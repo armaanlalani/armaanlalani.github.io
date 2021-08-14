@@ -178,27 +178,27 @@ btn[15].onclick = function(){
 
 btn[16].onclick = function(){
   modal.style.display = "block";
-  mod.innerHTML = "<h2 class='titles'>Neural Networks and Deep Learning</h2><p>Not complete yet, more information coming...</p>"
+  mod.innerHTML = "<h2 class='titles'>Introduction to Databases</h2><p>A courses that focused on both an introduction to relational algebra and database queries in SQL. Topics in the first half of the course included relationship schemas, various operators, sets, constraints, and keys. The SQL portion of the course focused on operators such as selects, various forms of join, and union/intersections. The course also provided an introduction to a number of design theory algorithms including the closure algorithm, 3NF synthesis, and the chase test.</p>"
 }
 
 btn[17].onclick = function(){
   modal.style.display = "block";
-  mod.innerHTML = "<h2 class='titles'>Systems Software</h2><p>Not complete yet, more information coming...</p>"
+  mod.innerHTML = "<h2 class='titles'>Systems Software</h2><p>A course that focused on the various components to Operating Systems. The course had a very strong knowledge aspect as well as application in the form of labs completed in C. Some primary course concepts included virtualization, i/o devices, interrupts, trap instructions, threads and their API, mutual exclusion, synchronization, scheduling policies, unix processes, memory management, and disks and file systems. Visit my Github to see the implementation of these concepts through the course labs.</p>"
 }
 
 btn[18].onclick = function(){
   modal.style.display = "block";
-  mod.innerHTML = "<h2 class='titles'>Probablistic Reasoning</h2><p>Not complete yet, more information coming...</p>"
+  mod.innerHTML = "<h2 class='titles'>Probablistic Reasoning</h2><p>An essential course for the field of Machine Learning and Artificial Intelligence. The course began with introductory concepts to probability which was built on with more advanced concepts and algorithms. Some of these concepts included maximum likelihood estimation, Bayesian hypothesis testing, linear and quadratic discriminant analysis, bayesian inference, Markov chains, Bayesian nets, Markov random fields, and hidden Markov models (forward-backward and Viterbi algorithms). The course also consisted of three labs completed in Python which enforced these concepts which can be <a href='https://github.com/armaanlalani/Probability' target = '_blank'>viewed on my Github</a>.</p>"
 }
 
 btn[19].onclick = function(){
   modal.style.display = "block";
-  mod.innerHTML = "<h2 class='titles'>Introduction to Machine Learning</h2><p>Not complete yet, more information coming...</p>"
+  mod.innerHTML = "<h2 class='titles'>Introduction to Machine Learning</h2><p>A course that developed a number of concepts covered in Introduction to Machine Intelligence. Some of these concepts included linear regression, logistic regression, gradient descent, the mathematical interpretation of neural networks and backpropagation, clustering, density estimation, Gaussian mixture models, expectation maximization, support vector machines, and PAC learning. The courses also consisted of programming assignments where these concepts were applied, which can be viewed on my Github (<a href='https://github.com/armaanlalani/Logistic-Regression' target = '_blank'>logistic regression</a>, <a href='https://github.com/armaanlalani/Neural-Networks' target = '_blank'>neural networks</a>, <a href='https://github.com/armaanlalani/Unsupervised-Learning' target = '_blank'>unsupervised learning)</a>.</p>"
 }
 
 btn[20].onclick = function(){
   modal.style.display = "block";
-  mod.innerHTML = "<h2 class='titles'>Artificial Intelligence</h2><p>Not complete yet, more information coming...</p>"
+  mod.innerHTML = "<h2 class='titles'>Artificial Intelligence</h2><p>A very interesting course that discussed various concepts relating to artificial intelligence and agent-based problems. Course concepts consisted of various search algorithms (breadth, depth), A* algorithm and heuristics, Boolean algebra and propositional logic, inference, constraint satisfiability problems, state-space search, random trees, game theory, min-max search, decision trees, Markov decision processes, dynamic programming, and reinforcement learning. The course also consisted of coding assignments in Python where these concepts were applied which can be <a href='https://github.com/armaanlalani/AI-Assignments' target = '_blank'>viewed on my Github</a>.</p>"
 }
 
 remove.onclick = function() {
