@@ -85,6 +85,30 @@ morebutton2.onclick = function(){
   }
 }
 
+var morebutton3 = document.getElementById("opmore")
+var op = document.getElementById("more4p")
+var opi = document.getElementById("more4i")
+var opl = document.getElementById("more4l")
+var show3 = true;
+morebutton3.onclick = function(){
+  if (!show3){
+    op.style.display = "contents";
+    opi.style.display = "block";
+    opi.style.float = "right";
+    opi.style.margin = "10px";
+    opl.style.display = "flex";
+    opmore.innerHTML = "--Show Less--"
+    show3 = true;
+  }
+  else if(show3){
+    op.style.display = "none";
+    opi.style.display = "none";
+    opl.style.display = "none";
+    opmore.innerHTML = "--Show More--"
+    show3 = false;
+  }
+}
+
 // Get the modal
 var modal = document.getElementById("mymodal");
 
@@ -199,6 +223,16 @@ btn[19].onclick = function(){
 btn[20].onclick = function(){
   modal.style.display = "block";
   mod.innerHTML = "<h2 class='titles'>Artificial Intelligence</h2><p>A very interesting course that discussed various concepts relating to artificial intelligence and agent-based problems. Course concepts consisted of various search algorithms (breadth, depth), A* algorithm and heuristics, Boolean algebra and propositional logic, inference, constraint satisfiability problems, state-space search, random trees, game theory, min-max search, decision trees, Markov decision processes, dynamic programming, and reinforcement learning. The course also consisted of coding assignments in Python where these concepts were applied which can be <a href='https://github.com/armaanlalani/AI-Assignments' target = '_blank'>viewed on my Github</a>.</p>"
+}
+
+btn[21].onclick = function(){
+  modal.style.display = "block";
+  mod.innerHTML = "<h2 class='titles>Markets and Competitive Strategy</h2><p>This course introduced concepts and frameworks relating to executing entrepreneurial business strategies in technology-based companies. The first half of the course focused on strategy and included concepts such as internal/external analysis, competitive strategies, and competitive dynamics. The second half of the course focused on marketing and included concepts such as market segmentation, product pricing and channels, promotions, etc. The course also consisted of a summative marketing plan in which each group was tasked with designing a comprehensive marketing plan for a new prospective business.</p>"
+}
+
+btn[22].onclick = function(){
+  modal.style.display = "block";
+  mod.innerHTML = "<h2 class='titles>Accounting and Finance</h2><p>This course provided an overview of concepts in accounting and corporate finance. The first half of the course focused on the fundamentals of accounting which included concepts such as financial reporting, financial statement analysis, cash flow statements, cost concepts, working capital, etc. The second half of the course focused on the fundamentals of finance and included concepts such as valuation of stocks and bonds, project evaluation, real options, cost of capital, hedging, etc."
 }
 
 remove.onclick = function() {

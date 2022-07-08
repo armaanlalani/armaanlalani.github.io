@@ -34,7 +34,7 @@
           <section id="home">
             <h2 id="heading">Welcome to my Personal Portfolio</h2>
             <img src="Picture.png" class="center">
-            <p class="paragraph" style="color: lightgrey;">My name is Armaan Lalani and I am currently in my third year of Engineering Science at the University of Toronto pursuing a Machine Intelligence Major combined with an Engineering Business Certificate. I am extremely passionate about machine learning and data analytics and am seeking to gain meaningful experience in the field through my formal education, external projects, and employment experience. Feel free to visit my LinkedIn or Github to learn more about me or navigate to the other sections of my page.</p>
+            <p class="paragraph" style="color: lightgrey;">My name is Armaan Lalani and I am currently in my Professional Experience Year (PEY) of Engineering Science at the University of Toronto pursuing a Machine Intelligence Major combined with an Engineering Business Certificate. I am extremely passionate about machine learning and data analytics and am seeking to gain meaningful experience in the field through my formal education, external projects, and employment experience. Feel free to visit my LinkedIn or Github to learn more about me or navigate to the other sections of my page.</p>
 
             <div id="social">
             <footer class="w3-container w3-padding-64 w3-center w3-black w3-xlarge" style="align-items: center;">
@@ -90,16 +90,33 @@
                 <button class="modbutton">Introduction to Machine Learning</button>
                 <button class="modbutton">Artificial Intelligence</button>
             </div>
+            <h3 id="subtitle" class="titles">Fourth Year Courses</h3>
+            <div class="fc">
+                <button class="modbutton">Markets and Competitive Strategy</button>
+                <button class="modbutton">Accounting and Finance</button>
+            </div>
         </article>
         <article id="experience">
             <h2 id= "experiencetitle" class="titles">experience</h2>
             <br>
+            <h3 id="subtitle" class="titles">CMG Investment Co-op for Total Fund Completion Portfolio Strategies (Quant) at OPTrust</h3>
+            <br>
+            <h4 id="subtitle2" class="'titles">May 2021 - July 2022</h4>
+            <br>
+            <img id="more4i" class="textwrap" src="optrust.jpeg" align="top" width=130px>
+            <p class="paragraph" id="more4p">I had the tremendous opportunity to work at OPTrust during my Professional Experience Year (PEY) as a CMG Investment Co-op on the TFCPS team. My role and team was heavily focused on making strong data driven investment decisions using a variety of techniques from the fields of data science and machine learning. A few of my most meaningful projects included building and equity regime detection model, a bootstrapping model to analyze the performance of various risk mitigants against the S&P, and a neural network to predict the price of movements of various future rolls.</p>
+            <br>
+            <p class="paragraph" id="more4p">The equity regime detection model consisted of two parts: the first was utilizing L1 trend filtering to numerically identify historical periods of growth and decline in equity and secondly, training a random forest model of several macroeconomic indicators to predict regime switches. The model performed well out of sample, and was able to predict the switch of regimes during the Global Financial Crisis as well as COVID. The model will continue to be used in production for Severe Market Decline and Systematic Risk Allocation. The bootstrapping model I built was used to test the effectiveness of various risk mitigating strategies against the S&P. The model samples historical returns to create a simulated path environment for a specified amount of time. It then introduces a risk mitigant (gold, bonds, currencies, etc.) or a particular strategy (trend, options, etc.) to attempt to reduce the VAR95 of the original portfolio by a certain percentage. This model is now currently being used by the investment division to test the effectiveness of various strategies. Lastly, I also built a convolutional neural network to predict price movements of futures rolls. I was responsible for creating the entire data pipeline, consisting of extracting the appropriate roll tickers based on the roll schedule, querying Bloomberg for price, volume, open interest, and commitment of trader’s data, and performing data preprocessing to ensure it could be passed through a model. The model did not perform as well as expected, however, the project provided me with important information regarding the process of rolling futures and the various capabilities offered by the Bloomberg terminal.</p>
+            <br>
+            <p class="paragraph" id="more4p">Finally, I also worked on a number of reporting projects during my time at OPTrust. Some of these included generating and sending out reports daily on FX Exposure and P&L, analyzing model slippage of Risk Reduced Equities using intraday data, and generating reporting emails for various fund portfolios.</p>
+            <br>
+            <button id="opmore">--Show Less--</button>
             <h3 id="subtitle" class="titles">University of Toronto Machine Intelligence Student Team (UTMIST)</h3>
             <br>
-            <h4 id="subtitle2" class="titles">July 2020 - Current</h4>
+            <h4 id="subtitle2" class="titles">July 2020 - May 2022</h4>
             <br>
             <img id="more1i" class="textwrap" src="utmist.png" align="top" width=130px>
-            <p class="paragraph" id="more1p">This academic year, I will be collaborating with other team members of UTMIST in the role of a Project Developer in the academic stream. This position entails projects focused on academic paper reproduction and extension and demands skills in collaboration and technical knowledge in machine intelligence, data, and stats. More information will added as projects are underway. For more information visit the <a href="https://utmist.gitlab.io/" target="_blank">UTMIST website</a>.</p>
+            <p class="paragraph" id="more1p">During the 2021-2022 academic year, I worked as a Project Developer for UTMIST. The project my team and I worked on was developing an image to text converter in Python and I was specifically tasked with implementing the sentence to word segmentation feature. By utilizing the IAM Dataset, I was able to generate a dataloader class which consisted of various examples of handwritten lines along with the bounding boxes associated with each individual word. By utilizing resnet architecture, I was able to reconstruct an existing model to train. During the training process, the model was not able to converge to locating the ground truth bounding boxes, and as a result, we proceeded to use a pretrained model. The pretrained model was able to locate the bounding boxes accurately on the dataloader class that was built and was used in the final pipeline. For more information visit the <a href="https://utmist.gitlab.io/" target="_blank">UTMIST website</a>.</p>
             <br>
             <button id="mimore">--Show Less--</button>
             <br>
