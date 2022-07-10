@@ -14,6 +14,8 @@ var prev = document.getElementsByClassName("prev");
 */
 
 var submit = document.getElementById("submit")
+
+/*
 var morebutton = document.getElementById("mimore")
 var utmist = document.getElementById("more1p")
 var utmisti = document.getElementById("more1i")
@@ -108,6 +110,7 @@ morebutton3.onclick = function(){
     show3 = false;
   }
 }
+*/
 
 // Get the modal
 var modal = document.getElementById("mymodal");
