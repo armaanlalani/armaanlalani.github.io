@@ -235,13 +235,14 @@ btn[21].onclick = function(){
 
 btn[22].onclick = function(){
   modal.style.display = "block";
-  mod.innerHTML = "<h2 class='titles>Accounting and Finance</h2><p>This course provided an overview of concepts in accounting and corporate finance. The first half of the course focused on the fundamentals of accounting which included concepts such as financial reporting, financial statement analysis, cash flow statements, cost concepts, working capital, etc. The second half of the course focused on the fundamentals of finance and included concepts such as valuation of stocks and bonds, project evaluation, real options, cost of capital, hedging, etc."
+  mod.innerHTML = "<h2 class='titles>Accounting and Finance</h2><p>This course provided an overview of concepts in accounting and corporate finance. The first half of the course focused on the fundamentals of accounting which included concepts such as financial reporting, financial statement analysis, cash flow statements, cost concepts, working capital, etc. The second half of the course focused on the fundamentals of finance and included concepts such as valuation of stocks and bonds, project evaluation, real options, cost of capital, hedging, etc.</p>"
 }
 
 remove.onclick = function() {
   modal.style.display = "none";
 }
 
+/*
 next[0].onclick = function(){
   showSlides(slideIndex += 1);
 }
@@ -249,6 +250,7 @@ next[0].onclick = function(){
 prev[0].onclick = function(){
   showSlides(slideIndex += -1);
 }
+*/
 
 /*
 function currentSlide(n) {
