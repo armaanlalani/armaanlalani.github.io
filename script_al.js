@@ -145,97 +145,77 @@ btn[3].onclick = function(){
 
 btn[4].onclick = function(){
   modal.style.display = "block";
-  mod.innerHTML = "<h2 class='titles'>Structures and Materials</h2><p class='paragraph'>A very unique course that focused on a number of topics related to structures and civil engineering including: stress-strain, the bending of beams, effective truss bridge design, flexural stresses, shear stress in beams, and design of reinforced concrete. The course also had two central projects including redesigning an existing bridge as a truss bridge using calculations and research and a hands on project where groups of students designed their own beam from matboard and glue. My team designed a beam that was able to withstand roughly 850 Newtons of force and placed within the top 20% in overall results and performance.</p><img src='civ1.JPG' width=250px><img src='civ2.JPG' width=250px><img src='civ3.JPG' width=250px>"
+  mod.innerHTML = "<h2 class='titles'>Ordinary Differential Equations</h2><p class='paragraph'>A course with a focus on solving ordinary differential equations using a variety of methods depending on the question presented. Some concepts taught included: method of integrating factors, the existence uniqueness theorem, systems of linear differential equations, stability of equilibrium points, fundamental matrices, nonhomogeneous linear systems, Laplace transforms, and convolution integrals. The course also had a strong focus on applying these concepts using MATLAB which can be found by <a href='https://github.com/armaanlalani/Ordinary-Differential-Equations_MATLAB' target='_blank'>clicking on this link</a>.</p>"
 }
 
 btn[5].onclick = function(){
   modal.style.display = "block";
-  mod.innerHTML = "<h2 class='titles'>Fundamentals of Electric Circuits</h2><p class='paragraph'>An introduction to electrical circuits through a number of topics including: nodal and mesh analysis, solving phasor circuits, power fcators, input signals using filters, and inductance. The course also had labs which allowed for testing various concepts that were taught during lectures.</p>"
+  mod.innerHTML = "<h2 class='titles'>Probability and Statistics</h2><p class='paragraph'>An introduction to various concepts relating to probability and statistics. Course concepts include: conditional probability, Baye's Rule, probability functions, cumulative distribution functions, joint probability distribution, covariance, binomial distribution, hypergeometric distribution, normal distribution, exponential distribution, transformation of variables, moment generating functions, t-distribution, interval estimates, Cramer Rao lower bounds, and one and two sample tests of hypotheses.</p>"
 }
 
 btn[6].onclick = function(){
   modal.style.display = "block";
-  mod.innerHTML = "<h2 class='titles'>Vector Calculus and Fluid Mechanics</h2><p class='paragraph'>The first half of this course dealt with a variety of concepts relating to multivariable calculus including: tangent planes, integrals with parameters, change of variable with Jacobians, line integrals, Green's Theorem, divergence, curl, and Stoke's Theorem. The second half of the course was an application and extension of multivariable calculus through analysis of fluid motion. This half of the course focused on concepts such as body vs. surface forces, Newtonian fluids, hydrostatics, compressible vs. incompressible flow, open channel flow, differential analysis of fluid flow, etc.</p>"
+  mod.innerHTML = "<h2 class='titles'>Praxis III</h2><p class='paragraph'>Praxis III is probably one of the most important and interesting courses I have taken so far in my undergraduate degree. The basis of the course involved designing an autonomous mechanism that was able to deliver electric chargers to cars located in a parking lot. This task was to be completed in teams of three and could be tackled in any which way as long as a number of restraints were followed. Prior to engaging in the project, my team and I had to complete a number of workshops on topics in rover fabrication, digital modelling, circuits and microcontrollers, motors and drivers, and interfacing. <a href='#projects'>Visit the projects section of the page</a> to learn more about my team's solution or <a href='praxisIII.pdf' download target='_blank'>download the challenge rules</a> to learn more.</p><p class='paragraph'>Due to the COVID-19 outbreak, this project was not completed due to lack of access to building and testing facilities. As a result, I completed an individual project around the concept of PID control using MATLAB. PID control is an essential concept relating to robotics to ensure any robot with wheels is able to travel as straight as possible when required. I was able to successfully implement PID control to the motion of simulated robot while also incorporating compass control which had a very significant impact on the robot's motion. Run the main_script.m file accessible through <a href='https://github.com/armaanlalani/PID_Controller' target = '_blank'>this link</a> to view the robot simulation and <a href='3.1_Armaan Lalani_Closed-Loop Controller.pdf' download target='_blank'>click on this link</a> to view my report which explains the various decisions I made.</p>"
 }
 
 btn[7].onclick = function(){
   modal.style.display = "block";
-  mod.innerHTML = "<h2 class='titles'>Digital and Computer Systems</h2><p class='paragraph'>A course with a strong focus on a number of aspects relating to computer hardware. The first half of the coure dealt primarily with applying concepts that were taught in lecture to programming assignments in Verilog. Some of these concepts included: logic functions, multiplexers, k-maps, combinational vs. sequential circuits, gated latches, flip-flops with both synchronous and asynchronous resets, and finite state machines. The second half of the course dealt primarily with assembly language programming through concepts such as memory architecture, the background between ARM instructions, memory mapping, intercepts, IRQ handlers, subroutines, etc. <a href='https://github.com/armaanlalani/ARMassembly' target='_blank'>Click on this link</a> to view labs associated with both Verilog and Assembly Language Programming.</p>"
+  mod.innerHTML = "<h2 class='titles'>Introduction to Machine Intelligence</h2><p>An introductory course on neural networks and applying them to various problems. Course content covered topics such as batch normalization, types of loss functions and optimizers, softmax, momentum, autoencoders, and various types of neural networks (CNN, RNN, GAN).</p><p>The course also provided the opportunity to apply these concepts to a series of assignments and a final project (more information in projects section). Course assignments included binary classifiers with an MLP, image classification for sign language, and determining sentence objectivity, all of which can be found on my Github."
 }
 
 btn[8].onclick = function(){
   modal.style.display = "block";
-  mod.innerHTML = "<h2 class='titles'>Ordinary Differential Equations</h2><p class='paragraph'>A course with a focus on solving ordinary differential equations using a variety of methods depending on the question presented. Some concepts taught included: method of integrating factors, the existence uniqueness theorem, systems of linear differential equations, stability of equilibrium points, fundamental matrices, nonhomogeneous linear systems, Laplace transforms, and convolution integrals. The course also had a strong focus on applying these concepts using MATLAB which can be found by <a href='https://github.com/armaanlalani/Ordinary-Differential-Equations_MATLAB' target='_blank'>clicking on this link</a>.</p>"
+  mod.innerHTML = "<h2 class='titles'>Introduction to Image Analysis</h2><p>An elective course that focused on a variety of concepts relating to image manipulation and analysis including linear filters, edge detection, keypoint detection, local descriptors, homography, stereo vision, and several others. The course provided me with the opportunity to work on a project with two other peers on 3D reconstruction from various 2D images, which is explained in depth in the project section. I also had the opportunity to work on various assignments that allowed me to apply course concepts including object edge detection, seam carving of images, optical flow between images, and several others all of which can be found on my Github.</p>"
 }
 
 btn[9].onclick = function(){
   modal.style.display = "block";
-  mod.innerHTML = "<h2 class='titles'>Probability and Statistics</h2><p class='paragraph'>An introduction to various concepts relating to probability and statistics. Course concepts include: conditional probability, Baye's Rule, probability functions, cumulative distribution functions, joint probability distribution, covariance, binomial distribution, hypergeometric distribution, normal distribution, exponential distribution, transformation of variables, moment generating functions, t-distribution, interval estimates, Cramer Rao lower bounds, and one and two sample tests of hypotheses.</p>"
+  mod.innerHTML = "<h2 class='titles'>Matrix Algebra and Optimization</h2><p>An extremely interesting course on the uses of matrices for a variety of real-world problems and their application to Machine Intelligence. Course concepts included spectral decomposition, SVD (singular value decomposition), linear and quadratic programming, convex sets and functions, and several others. The course provided me with the opportunity to apply these concepts to a variety of intriguing assignments dealing with problems such as portfolio optimization, eigenfaces, image compression, and various others. Click on the links below to learn more about these projects.</p><p><a href='PS1.pdf' download target='_blank'>Problem Set 1, </a><a href='PS2.pdf' download target='_blank'>Problem Set 2, </a><a href='PS3.pdf' download target='_blank'>Problem Set 3, </a><a href='PS4.pdf' download target='_blank'>Problem Set 4, </a><a href='PS5.pdf' download target='_blank'>Problem Set 5, </a><a href='PS6.pdf' download target='_blank'>and Problem Set 6.</a></p>"
 }
 
 btn[10].onclick = function(){
   modal.style.display = "block";
-  mod.innerHTML = "<h2 class='titles'>Praxis III</h2><p class='paragraph'>Praxis III is probably one of the most important and interesting courses I have taken so far in my undergraduate degree. The basis of the course involved designing an autonomous mechanism that was able to deliver electric chargers to cars located in a parking lot. This task was to be completed in teams of three and could be tackled in any which way as long as a number of restraints were followed. Prior to engaging in the project, my team and I had to complete a number of workshops on topics in rover fabrication, digital modelling, circuits and microcontrollers, motors and drivers, and interfacing. <a href='#projects'>Visit the projects section of the page</a> to learn more about my team's solution or <a href='praxisIII.pdf' download target='_blank'>download the challenge rules</a> to learn more.</p><p class='paragraph'>Due to the COVID-19 outbreak, this project was not completed due to lack of access to building and testing facilities. As a result, I completed an individual project around the concept of PID control using MATLAB. PID control is an essential concept relating to robotics to ensure any robot with wheels is able to travel as straight as possible when required. I was able to successfully implement PID control to the motion of simulated robot while also incorporating compass control which had a very significant impact on the robot's motion. Run the main_script.m file accessible through <a href='https://github.com/armaanlalani/PID_Controller' target = '_blank'>this link</a> to view the robot simulation and <a href='3.1_Armaan Lalani_Closed-Loop Controller.pdf' download target='_blank'>click on this link</a> to view my report which explains the various decisions I made.</p>"
+  mod.innerHTML = "<h2 class='titles'>Foundations of Computing</h2><p>A course that built on various concepts from the Data Structures and Algorithms course taught during first year. The course went into depth on a number of concepts including various sorting algorithms, graph theory, hash tables, splay trees, greedy algorithms, dynamic programming, ammortized analysis, maximum flow, theory of automata, NP completeness, and various others.</p>"
 }
 
 btn[11].onclick = function(){
   modal.style.display = "block";
-  mod.innerHTML = "<h2 class='titles'>Quantum and Thermal Physics</h2><p class='paragraph'>The first half of this course dealt with quantum physics. Course topics included quantum harmonic oscillators, solving Schrodinger's Equation, particles in a box, transmission and reflection, potential steps and wells, electron spin, etc. The second half of the course dealt with topics relating to thermal physics inluding compression and expansion, heat capacity, microstates and macrostates of molecules, statistical mechanics, etc. I also had the opportunity to engage in a number of labs including the Millikan oil drop experiment and wave phenomena experiments.</p>"
+  mod.innerHTML = "<h2 class='titles'>Introduction to Databases</h2><p>A courses that focused on both an introduction to relational algebra and database queries in SQL. Topics in the first half of the course included relationship schemas, various operators, sets, constraints, and keys. The SQL portion of the course focused on operators such as selects, various forms of join, and union/intersections. The course also provided an introduction to a number of design theory algorithms including the closure algorithm, 3NF synthesis, and the chase test.</p>"
 }
 
 btn[12].onclick = function(){
   modal.style.display = "block";
-  mod.innerHTML = "<h2 class='titles'>Introduction to Machine Intelligence</h2><p>An introductory course on neural networks and applying them to various problems. Course content covered topics such as batch normalization, types of loss functions and optimizers, softmax, momentum, autoencoders, and various types of neural networks (CNN, RNN, GAN).</p><p>The course also provided the opportunity to apply these concepts to a series of assignments and a final project (more information in projects section). Course assignments included binary classifiers with an MLP, image classification for sign language, and determining sentence objectivity, all of which can be found on my Github."
+  mod.innerHTML = "<h2 class='titles'>Systems Software</h2><p>A course that focused on the various components to Operating Systems. The course had a very strong knowledge aspect as well as application in the form of labs completed in C. Some primary course concepts included virtualization, i/o devices, interrupts, trap instructions, threads and their API, mutual exclusion, synchronization, scheduling policies, unix processes, memory management, and disks and file systems. Visit my Github to see the implementation of these concepts through the course labs.</p>"
 }
 
 btn[13].onclick = function(){
   modal.style.display = "block";
-  mod.innerHTML = "<h2 class='titles'>Introduction to Image Analysis</h2><p>An elective course that focused on a variety of concepts relating to image manipulation and analysis including linear filters, edge detection, keypoint detection, local descriptors, homography, stereo vision, and several others. The course provided me with the opportunity to work on a project with two other peers on 3D reconstruction from various 2D images, which is explained in depth in the project section. I also had the opportunity to work on various assignments that allowed me to apply course concepts including object edge detection, seam carving of images, optical flow between images, and several others all of which can be found on my Github.</p>"
+  mod.innerHTML = "<h2 class='titles'>Probablistic Reasoning</h2><p>An essential course for the field of Machine Learning and Artificial Intelligence. The course began with introductory concepts to probability which was built on with more advanced concepts and algorithms. Some of these concepts included maximum likelihood estimation, Bayesian hypothesis testing, linear and quadratic discriminant analysis, bayesian inference, Markov chains, Bayesian nets, Markov random fields, and hidden Markov models (forward-backward and Viterbi algorithms). The course also consisted of three labs completed in Python which enforced these concepts which can be <a href='https://github.com/armaanlalani/Probability' target = '_blank'>viewed on my Github</a>.</p>"
 }
 
 btn[14].onclick = function(){
   modal.style.display = "block";
-  mod.innerHTML = "<h2 class='titles'>Matrix Algebra and Optimization</h2><p>An extremely interesting course on the uses of matrices for a variety of real-world problems and their application to Machine Intelligence. Course concepts included spectral decomposition, SVD (singular value decomposition), linear and quadratic programming, convex sets and functions, and several others. The course provided me with the opportunity to apply these concepts to a variety of intriguing assignments dealing with problems such as portfolio optimization, eigenfaces, image compression, and various others. Click on the links below to learn more about these projects.</p><p><a href='PS1.pdf' download target='_blank'>Problem Set 1, </a><a href='PS2.pdf' download target='_blank'>Problem Set 2, </a><a href='PS3.pdf' download target='_blank'>Problem Set 3, </a><a href='PS4.pdf' download target='_blank'>Problem Set 4, </a><a href='PS5.pdf' download target='_blank'>Problem Set 5, </a><a href='PS6.pdf' download target='_blank'>and Problem Set 6.</a></p>"
+  mod.innerHTML = "<h2 class='titles'>Introduction to Machine Learning</h2><p>A course that developed a number of concepts covered in Introduction to Machine Intelligence. Some of these concepts included linear regression, logistic regression, gradient descent, the mathematical interpretation of neural networks and backpropagation, clustering, density estimation, Gaussian mixture models, expectation maximization, support vector machines, and PAC learning. The courses also consisted of programming assignments where these concepts were applied, which can be viewed on my Github (<a href='https://github.com/armaanlalani/Logistic-Regression' target = '_blank'>logistic regression</a>, <a href='https://github.com/armaanlalani/Neural-Networks' target = '_blank'>neural networks</a>, <a href='https://github.com/armaanlalani/Unsupervised-Learning' target = '_blank'>unsupervised learning)</a>.</p>"
 }
 
 btn[15].onclick = function(){
   modal.style.display = "block";
-  mod.innerHTML = "<h2 class='titles'>Foundations of Computing</h2><p>A course that built on various concepts from the Data Structures and Algorithms course taught during first year. The course went into depth on a number of concepts including various sorting algorithms, graph theory, hash tables, splay trees, greedy algorithms, dynamic programming, ammortized analysis, maximum flow, theory of automata, NP completeness, and various others.</p>"
+  mod.innerHTML = "<h2 class='titles'>Artificial Intelligence</h2><p>A very interesting course that discussed various concepts relating to artificial intelligence and agent-based problems. Course concepts consisted of various search algorithms (breadth, depth), A* algorithm and heuristics, Boolean algebra and propositional logic, inference, constraint satisfiability problems, state-space search, random trees, game theory, min-max search, decision trees, Markov decision processes, dynamic programming, and reinforcement learning. The course also consisted of coding assignments in Python where these concepts were applied which can be <a href='https://github.com/armaanlalani/AI-Assignments' target = '_blank'>viewed on my Github</a>.</p>"
 }
 
 btn[16].onclick = function(){
   modal.style.display = "block";
-  mod.innerHTML = "<h2 class='titles'>Introduction to Databases</h2><p>A courses that focused on both an introduction to relational algebra and database queries in SQL. Topics in the first half of the course included relationship schemas, various operators, sets, constraints, and keys. The SQL portion of the course focused on operators such as selects, various forms of join, and union/intersections. The course also provided an introduction to a number of design theory algorithms including the closure algorithm, 3NF synthesis, and the chase test.</p>"
+  mod.innerHTML = "<h2 class='titles'>Markets and Competitive Strategy</h2><p>This course introduced concepts and frameworks relating to executing entrepreneurial business strategies in technology-based companies. The first half of the course focused on strategy and included concepts such as internal/external analysis, competitive strategies, and competitive dynamics. The second half of the course focused on marketing and included concepts such as market segmentation, product pricing and channels, promotions, etc. The course also consisted of a summative marketing plan in which each group was tasked with designing a comprehensive marketing plan for a new prospective business.</p>"
 }
 
 btn[17].onclick = function(){
   modal.style.display = "block";
-  mod.innerHTML = "<h2 class='titles'>Systems Software</h2><p>A course that focused on the various components to Operating Systems. The course had a very strong knowledge aspect as well as application in the form of labs completed in C. Some primary course concepts included virtualization, i/o devices, interrupts, trap instructions, threads and their API, mutual exclusion, synchronization, scheduling policies, unix processes, memory management, and disks and file systems. Visit my Github to see the implementation of these concepts through the course labs.</p>"
+  mod.innerHTML = "<h2 class='titles'>Accounting and Finance</h2><p>This course provided an overview of concepts in accounting and corporate finance. The first half of the course focused on the fundamentals of accounting which included concepts such as financial reporting, financial statement analysis, cash flow statements, cost concepts, working capital, etc. The second half of the course focused on the fundamentals of finance and included concepts such as valuation of stocks and bonds, project evaluation, real options, cost of capital, hedging, etc.</p>"
 }
 
 btn[18].onclick = function(){
   modal.style.display = "block";
-  mod.innerHTML = "<h2 class='titles'>Probablistic Reasoning</h2><p>An essential course for the field of Machine Learning and Artificial Intelligence. The course began with introductory concepts to probability which was built on with more advanced concepts and algorithms. Some of these concepts included maximum likelihood estimation, Bayesian hypothesis testing, linear and quadratic discriminant analysis, bayesian inference, Markov chains, Bayesian nets, Markov random fields, and hidden Markov models (forward-backward and Viterbi algorithms). The course also consisted of three labs completed in Python which enforced these concepts which can be <a href='https://github.com/armaanlalani/Probability' target = '_blank'>viewed on my Github</a>.</p>"
-}
-
-btn[19].onclick = function(){
-  modal.style.display = "block";
-  mod.innerHTML = "<h2 class='titles'>Introduction to Machine Learning</h2><p>A course that developed a number of concepts covered in Introduction to Machine Intelligence. Some of these concepts included linear regression, logistic regression, gradient descent, the mathematical interpretation of neural networks and backpropagation, clustering, density estimation, Gaussian mixture models, expectation maximization, support vector machines, and PAC learning. The courses also consisted of programming assignments where these concepts were applied, which can be viewed on my Github (<a href='https://github.com/armaanlalani/Logistic-Regression' target = '_blank'>logistic regression</a>, <a href='https://github.com/armaanlalani/Neural-Networks' target = '_blank'>neural networks</a>, <a href='https://github.com/armaanlalani/Unsupervised-Learning' target = '_blank'>unsupervised learning)</a>.</p>"
-}
-
-btn[20].onclick = function(){
-  modal.style.display = "block";
-  mod.innerHTML = "<h2 class='titles'>Artificial Intelligence</h2><p>A very interesting course that discussed various concepts relating to artificial intelligence and agent-based problems. Course concepts consisted of various search algorithms (breadth, depth), A* algorithm and heuristics, Boolean algebra and propositional logic, inference, constraint satisfiability problems, state-space search, random trees, game theory, min-max search, decision trees, Markov decision processes, dynamic programming, and reinforcement learning. The course also consisted of coding assignments in Python where these concepts were applied which can be <a href='https://github.com/armaanlalani/AI-Assignments' target = '_blank'>viewed on my Github</a>.</p>"
-}
-
-btn[21].onclick = function(){
-  modal.style.display = "block";
-  mod.innerHTML = "<h2 class='titles>Markets and Competitive Strategy</h2><p>This course introduced concepts and frameworks relating to executing entrepreneurial business strategies in technology-based companies. The first half of the course focused on strategy and included concepts such as internal/external analysis, competitive strategies, and competitive dynamics. The second half of the course focused on marketing and included concepts such as market segmentation, product pricing and channels, promotions, etc. The course also consisted of a summative marketing plan in which each group was tasked with designing a comprehensive marketing plan for a new prospective business.</p>"
-}
-
-btn[22].onclick = function(){
-  modal.style.display = "block";
-  mod.innerHTML = "<h2 class='titles>Accounting and Finance</h2><p>This course provided an overview of concepts in accounting and corporate finance. The first half of the course focused on the fundamentals of accounting which included concepts such as financial reporting, financial statement analysis, cash flow statements, cost concepts, working capital, etc. The second half of the course focused on the fundamentals of finance and included concepts such as valuation of stocks and bonds, project evaluation, real options, cost of capital, hedging, etc.</p>"
+  mod.innerHTML = "<h2 class='titles'>Decision Support Systems</h2><p>Course is currently in progress, check back later for more information.</p>"
 }
 
 remove.onclick = function() {
@@ -291,4 +271,121 @@ function scrollFunction() {
 function topFunction() {
   document.body.scrollTop = 0;
   document.documentElement.scrollTop = 0;
+}
+
+function myFunction_op() {
+  var moreText = document.getElementById("more_op");
+  var btnText = document.getElementById("moreBtn_op");
+
+  if (moreText.style.display === "none") {
+    btnText.innerHTML = "Read Less"; 
+    moreText.style.display = "inline";
+  } else {
+    btnText.innerHTML = "Read More"; 
+    moreText.style.display = "none";
+  }
+}
+
+function myFunction_ut() {
+  var moreText = document.getElementById("more_ut");
+  var btnText = document.getElementById("moreBtn_ut");
+
+  if (moreText.style.display === "none") {
+    btnText.innerHTML = "Read Less"; 
+    moreText.style.display = "inline";
+  } else {
+    btnText.innerHTML = "Read More"; 
+    moreText.style.display = "none";
+  }
+}
+
+function myFunction_cor() {
+  var moreText = document.getElementById("more_cor");
+  var btnText = document.getElementById("moreBtn_cor");
+
+  if (moreText.style.display === "none") {
+    btnText.innerHTML = "Read Less"; 
+    moreText.style.display = "inline";
+  } else {
+    btnText.innerHTML = "Read More"; 
+    moreText.style.display = "none";
+  }
+}
+
+function myFunction_td() {
+  var moreText = document.getElementById("more_td");
+  var btnText = document.getElementById("moreBtn_td");
+
+  if (moreText.style.display === "none") {
+    btnText.innerHTML = "Read Less"; 
+    moreText.style.display = "inline";
+  } else {
+    btnText.innerHTML = "Read More"; 
+    moreText.style.display = "none";
+  }
+}
+
+function myFunction_gp() {
+  var moreText = document.getElementById("more_gp");
+  var btnText = document.getElementById("moreBtn_gp");
+
+  if (moreText.style.display === "none") {
+    btnText.innerHTML = "Read Less"; 
+    moreText.style.display = "inline";
+  } else {
+    btnText.innerHTML = "Read More"; 
+    moreText.style.display = "none";
+  }
+}
+
+function myFunction_ia() {
+  var moreText = document.getElementById("more_ia");
+  var btnText = document.getElementById("moreBtn_ia");
+
+  if (moreText.style.display === "none") {
+    btnText.innerHTML = "Read Less"; 
+    moreText.style.display = "inline";
+  } else {
+    btnText.innerHTML = "Read More"; 
+    moreText.style.display = "none";
+  }
+}
+
+function myFunction_p3() {
+  var moreText = document.getElementById("more_p3");
+  var btnText = document.getElementById("moreBtn_p3");
+
+  if (moreText.style.display === "none") {
+    btnText.innerHTML = "Read Less"; 
+    moreText.style.display = "inline";
+  } else {
+    btnText.innerHTML = "Read More"; 
+    moreText.style.display = "none";
+  }
+}
+
+function myFunction_be() {
+  var moreText = document.getElementById("more_be");
+  var btnText = document.getElementById("moreBtn_be");
+
+  if (moreText.style.display === "none") {
+    btnText.innerHTML = "Read Less"; 
+    moreText.style.display = "inline";
+  } else {
+    btnText.innerHTML = "Read More"; 
+    moreText.style.display = "none";
+  }
+}
+
+function myFunction_p2() {
+  var moreText = document.getElementById("more_p2");
+  var btnText = document.getElementById("moreBtn_p2");
+
+  if (moreText.style.display === "none") {
+    btnText.innerHTML = "Read Less"; 
+    moreText.style.display = "inline";
+  } else {
+    btnText.innerHTML = "Read More"; 
+    moreText.style.display = "none";
+  }
 }
