@@ -215,7 +215,12 @@ btn[17].onclick = function(){
 
 btn[18].onclick = function(){
   modal.style.display = "block";
-  mod.innerHTML = "<h2 class='titles'>Decision Support Systems</h2><p>Course is currently in progress, check back later for more information.</p>"
+  mod.innerHTML = "<h2 class='titles'>Decision Support Systems</h2><p>This couse provided an understanding on the role of decision support systems in industry and the various techniques used to implement them. The course consisted of 6 primary topics which were explored in depth including information retrieval, machine learning, recommender systems, data science, natural language processing, and social network analysis.</p>"
+}
+
+btn[19].onclick = function(){
+  modal.style.display = "block";
+  mod.innerHTML = "<h2 class='titles'>Distributed Systems</h2><p>An advanced course that provided an understanding on the operations of distributed systems as well as the opportunity to apply course concepts in a cumulative group project. Course concepts included time in distribute systems, failure models, mutual exclution, election algorithms, consensus algorithms, synchronization, consistency models, replication methods, gossiping, hashing, peer-to-peer systems, and blockchain.</p><p>The group project was the most significant portion of the course and involved creating a distributed key-value cloud storage service that incorporated many of the course concepts including hashing, consistency, failure methods, etc. The developed code for this project can be viewed <a href='https://github.com/Pedja-Djape/Cloud-Database-ECE419' target = '_blank'>here</a>.</p>"
 }
 
 remove.onclick = function() {
