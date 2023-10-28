@@ -220,7 +220,22 @@ btn[18].onclick = function(){
 
 btn[19].onclick = function(){
   modal.style.display = "block";
-  mod.innerHTML = "<h2 class='titles'>Distributed Systems</h2><p>An advanced course that provided an understanding on the operations of distributed systems as well as the opportunity to apply course concepts in a cumulative group project. Course concepts included time in distribute systems, failure models, mutual exclution, election algorithms, consensus algorithms, synchronization, consistency models, replication methods, gossiping, hashing, peer-to-peer systems, and blockchain.</p><p>The group project was the most significant portion of the course and involved creating a distributed key-value cloud storage service that incorporated many of the course concepts including hashing, consistency, failure methods, etc. The developed code for this project can be viewed <a href='https://github.com/Pedja-Djape/Cloud-Database-ECE419' target = '_blank'>here</a>.</p>"
+  mod.innerHTML = "<h2 class='titles'>Distributed Systems</h2><p>An advanced course that provided an understanding on the operations of distributed systems as well as the opportunity to apply course concepts in a cumulative group project. Course concepts included time in distribute systems, failure models, mutual exclusion, election algorithms, consensus algorithms, synchronization, consistency models, replication methods, gossiping, hashing, peer-to-peer systems, and blockchain.</p><p>The group project was the most significant portion of the course and involved creating a distributed key-value cloud storage service that incorporated many of the course concepts including hashing, consistency, failure methods, etc. The developed code for this project can be viewed <a href='https://github.com/Pedja-Djape/Cloud-Database-ECE419' target = '_blank'>here</a>.</p>"
+}
+
+btn[20].onclick = function(){
+  modal.style.display = "block";
+  mod.innerHTML = "<h2 class='titles'>Optimization in Machine Learning</h2><p>A course that focused on the role of machine learning relating to mathematics, algorithms, and computation. The course covered common machine learning models for both regression and classification and the optimization processes for training these models.</p>"
+}
+
+btn[21].onclick = function(){
+  modal.style.display = "block";
+  mod.innerHTML = "<h2 class='titles'>Capstone</h2><p>Information on my capstone project can be found in 'Machine Learning Consultant at Perimeter Medical Imaging AI' in the Experience Section.</p>"
+}
+
+btn[22].onclick = function(){
+  modal.style.display = "block";
+  mod.innerHTML = "<h2 class='titles'>Thesis</h2><p>Information on my thesis can be found in 'Data Science Consultant at Center for Management of Technology and Entrepreneurship' in the Experience Section.</p>"
 }
 
 remove.onclick = function() {
