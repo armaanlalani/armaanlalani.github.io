@@ -294,8 +294,8 @@ function topFunction() {
 }
 
 function myFunction_pm() {
-  var moreText = document.getElementById("more_op");
-  var btnText = document.getElementById("moreBtn_op");
+  var moreText = document.getElementById("more_pm");
+  var btnText = document.getElementById("moreBtn_pm");
 
   if (moreText.style.display === "none") {
     btnText.innerHTML = "Read Less"; 
