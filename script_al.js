@@ -293,6 +293,19 @@ function topFunction() {
   document.documentElement.scrollTop = 0;
 }
 
+function myFunction_pm() {
+  var moreText = document.getElementById("more_op");
+  var btnText = document.getElementById("moreBtn_op");
+
+  if (moreText.style.display === "none") {
+    btnText.innerHTML = "Read Less"; 
+    moreText.style.display = "inline";
+  } else {
+    btnText.innerHTML = "Read More"; 
+    moreText.style.display = "none";
+  }
+}
+
 function myFunction_op() {
   var moreText = document.getElementById("more_op");
   var btnText = document.getElementById("moreBtn_op");
