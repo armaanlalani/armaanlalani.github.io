@@ -14,6 +14,18 @@ html {
     top: 4rem;
 }
 
+#more_th {display: none;}
+
+#moreBtn_th{
+  display: inline;
+}
+
+#more_pm {display: none;}
+
+#moreBtn_pm{
+  display: inline;
+}
+
 #more_op {display: none;}
 
 #moreBtn_op{
