@@ -123,37 +123,37 @@ var remove = document.getElementsByClassName("close")[0];
 var mod = document.querySelector("#poptext");
 
 // When the user clicks the button, open the modal 
-btn[0].onclick = function() {
+btn[16].onclick = function() {
   modal.style.display = "block";
   mod.innerHTML = "<h2 class='titles'>Data Structures and Algorithms</h2><p class='paragraph'>An introduction to data structures and algorithms using both Python and C to create stacks, queues, binary search trees, trees, hash tables, graphs, etc. A few larger scale projects as well including: <ul><li><a href='https://github.com/armaanlalani/chessAI' target='_blank'>AI for Chess using Python</a></li><li><a href='https://github.com/armaanlalani/BurgerPDE' target='_blank'>Burger PDE</a></li></ul></p>";
 }
 
-btn[1].onclick = function(){
+btn[17].onclick = function(){
   modal.style.display = "block";
   mod.innerHTML = "<h2 class='titles'>Calculus I and II</h2><p class='paragraph'>A variety of advanced calculus concepts including delta-epsilon limit proofs, inverse functions, integration techniques (partial fractions, trig substitution), partial derivaties, etc.</p>";
 }
 
-btn[2].onclick = function(){
+btn[18].onclick = function(){
   modal.style.display = "block";
   mod.innerHTML = "<h2 class='titles'>Praxis I and II</h2><p class='paragraph'>Two courses that provide a strong foundation in engineering design. The first course focuses mainly on the theory behind engineering design such as the process of diverging, converging, effective methods of idea generation, leadership styles, and targeting various aspects of design. Completed the course by designing a prototype of a wearable pencil case to assist students working while commuting to school.</p><p class='paragraph'>The second course focused on applying the concepts taught during the first course. I had the opportunity to collaborate with three other students to design a mechanism or process to assist a local badminton club in collecting shuttlecocks after drills. This project consisted of applying various concepts taught earlier in the year through various brainstroming methods and utilizing comparison matrices and SCAMPER tools in order to converge towards an idea. We also had the opportunity to test our prototype at the badminton club to verify our solution and presented our innovative ideas at the annual University of Toronto's Praxis Showcase.</p><img src='praxis2.JPG' width=250px><img src='praxis3.JPG' width=250px><img src='praxis1.PNG' width=250px>"
 }
 
-btn[3].onclick = function(){
+btn[19].onclick = function(){
   modal.style.display = "block";
   mod.innerHTML = "<h2 class='titles'>Linear Algebra</h2><p class='paragraph'>A course with a very strong emphasis on formal proofs related to topics such as vector spaces, span, linear dependency, differential equations, etc.</p>";
 }
 
-btn[4].onclick = function(){
+btn[20].onclick = function(){
   modal.style.display = "block";
   mod.innerHTML = "<h2 class='titles'>Ordinary Differential Equations</h2><p class='paragraph'>A course with a focus on solving ordinary differential equations using a variety of methods depending on the question presented. Some concepts taught included: method of integrating factors, the existence uniqueness theorem, systems of linear differential equations, stability of equilibrium points, fundamental matrices, nonhomogeneous linear systems, Laplace transforms, and convolution integrals. The course also had a strong focus on applying these concepts using MATLAB which can be found by <a href='https://github.com/armaanlalani/Ordinary-Differential-Equations_MATLAB' target='_blank'>clicking on this link</a>.</p>"
 }
 
-btn[5].onclick = function(){
+btn[21].onclick = function(){
   modal.style.display = "block";
   mod.innerHTML = "<h2 class='titles'>Probability and Statistics</h2><p class='paragraph'>An introduction to various concepts relating to probability and statistics. Course concepts include: conditional probability, Baye's Rule, probability functions, cumulative distribution functions, joint probability distribution, covariance, binomial distribution, hypergeometric distribution, normal distribution, exponential distribution, transformation of variables, moment generating functions, t-distribution, interval estimates, Cramer Rao lower bounds, and one and two sample tests of hypotheses.</p>"
 }
 
-btn[6].onclick = function(){
+btn[22].onclick = function(){
   modal.style.display = "block";
   mod.innerHTML = "<h2 class='titles'>Praxis III</h2><p class='paragraph'>Praxis III is probably one of the most important and interesting courses I have taken so far in my undergraduate degree. The basis of the course involved designing an autonomous mechanism that was able to deliver electric chargers to cars located in a parking lot. This task was to be completed in teams of three and could be tackled in any which way as long as a number of restraints were followed. Prior to engaging in the project, my team and I had to complete a number of workshops on topics in rover fabrication, digital modelling, circuits and microcontrollers, motors and drivers, and interfacing. <a href='#projects'>Visit the projects section of the page</a> to learn more about my team's solution or <a href='praxisIII.pdf' download target='_blank'>download the challenge rules</a> to learn more.</p><p class='paragraph'>Due to the COVID-19 outbreak, this project was not completed due to lack of access to building and testing facilities. As a result, I completed an individual project around the concept of PID control using MATLAB. PID control is an essential concept relating to robotics to ensure any robot with wheels is able to travel as straight as possible when required. I was able to successfully implement PID control to the motion of simulated robot while also incorporating compass control which had a very significant impact on the robot's motion. Run the main_script.m file accessible through <a href='https://github.com/armaanlalani/PID_Controller' target = '_blank'>this link</a> to view the robot simulation and <a href='3.1_Armaan Lalani_Closed-Loop Controller.pdf' download target='_blank'>click on this link</a> to view my report which explains the various decisions I made.</p>"
 }
@@ -203,37 +203,37 @@ btn[15].onclick = function(){
   mod.innerHTML = "<h2 class='titles'>Artificial Intelligence</h2><p>A very interesting course that discussed various concepts relating to artificial intelligence and agent-based problems. Course concepts consisted of various search algorithms (breadth, depth), A* algorithm and heuristics, Boolean algebra and propositional logic, inference, constraint satisfiability problems, state-space search, random trees, game theory, min-max search, decision trees, Markov decision processes, dynamic programming, and reinforcement learning. The course also consisted of coding assignments in Python where these concepts were applied which can be <a href='https://github.com/armaanlalani/AI-Assignments' target = '_blank'>viewed on my Github</a>.</p>"
 }
 
-btn[16].onclick = function(){
+btn[0].onclick = function(){
   modal.style.display = "block";
   mod.innerHTML = "<h2 class='titles'>Markets and Competitive Strategy</h2><p>This course introduced concepts and frameworks relating to executing entrepreneurial business strategies in technology-based companies. The first half of the course focused on strategy and included concepts such as internal/external analysis, competitive strategies, and competitive dynamics. The second half of the course focused on marketing and included concepts such as market segmentation, product pricing and channels, promotions, etc. The course also consisted of a summative marketing plan in which each group was tasked with designing a comprehensive marketing plan for a new prospective business.</p>"
 }
 
-btn[17].onclick = function(){
+btn[1].onclick = function(){
   modal.style.display = "block";
   mod.innerHTML = "<h2 class='titles'>Accounting and Finance</h2><p>This course provided an overview of concepts in accounting and corporate finance. The first half of the course focused on the fundamentals of accounting which included concepts such as financial reporting, financial statement analysis, cash flow statements, cost concepts, working capital, etc. The second half of the course focused on the fundamentals of finance and included concepts such as valuation of stocks and bonds, project evaluation, real options, cost of capital, hedging, etc.</p>"
 }
 
-btn[18].onclick = function(){
+btn[2].onclick = function(){
   modal.style.display = "block";
   mod.innerHTML = "<h2 class='titles'>Decision Support Systems</h2><p>This couse provided an understanding on the role of decision support systems in industry and the various techniques used to implement them. The course consisted of 6 primary topics which were explored in depth including information retrieval, machine learning, recommender systems, data science, natural language processing, and social network analysis.</p>"
 }
 
-btn[19].onclick = function(){
+btn[3].onclick = function(){
   modal.style.display = "block";
   mod.innerHTML = "<h2 class='titles'>Distributed Systems</h2><p>An advanced course that provided an understanding on the operations of distributed systems as well as the opportunity to apply course concepts in a cumulative group project. Course concepts included time in distribute systems, failure models, mutual exclusion, election algorithms, consensus algorithms, synchronization, consistency models, replication methods, gossiping, hashing, peer-to-peer systems, and blockchain.</p><p>The group project was the most significant portion of the course and involved creating a distributed key-value cloud storage service that incorporated many of the course concepts including hashing, consistency, failure methods, etc. The developed code for this project can be viewed <a href='https://github.com/Pedja-Djape/Cloud-Database-ECE419' target = '_blank'>here</a>.</p>"
 }
 
-btn[20].onclick = function(){
+btn[4].onclick = function(){
   modal.style.display = "block";
   mod.innerHTML = "<h2 class='titles'>Optimization in Machine Learning</h2><p>A course that focused on the role of machine learning relating to mathematics, algorithms, and computation. The course covered common machine learning models for both regression and classification and the optimization processes for training these models.</p>"
 }
 
-btn[21].onclick = function(){
+btn[5].onclick = function(){
   modal.style.display = "block";
   mod.innerHTML = "<h2 class='titles'>Capstone</h2><p>Information on my capstone project can be found in 'Machine Learning Consultant at Perimeter Medical Imaging AI' in the Experience Section.</p>"
 }
 
-btn[22].onclick = function(){
+btn[6].onclick = function(){
   modal.style.display = "block";
   mod.innerHTML = "<h2 class='titles'>Thesis</h2><p>Information on my thesis can be found in 'Data Science Consultant at Center for Management of Technology and Entrepreneurship' in the Experience Section.</p>"
 }
@@ -291,6 +291,19 @@ function scrollFunction() {
 function topFunction() {
   document.body.scrollTop = 0;
   document.documentElement.scrollTop = 0;
+}
+
+function myFunction_ob() {
+  var moreText = document.getElementById("more_ob");
+  var btnText = document.getElementById("moreBtn_ob");
+
+  if (moreText.style.display === "none") {
+    btnText.innerHTML = "Read Less"; 
+    moreText.style.display = "inline";
+  } else {
+    btnText.innerHTML = "Read More"; 
+    moreText.style.display = "none";
+  }
 }
 
 function myFunction_th() {
