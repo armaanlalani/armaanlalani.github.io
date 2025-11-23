@@ -227,58 +227,69 @@ document.addEventListener('DOMContentLoaded', function() {
 
 });
 
-// Contact form submission
-document.getElementById('contact-form').addEventListener('submit', function(event) {
+// Contact form submission to Google Sheets
+const GOOGLE_SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbxql4Ce8NkX6M2T1U2aKwhMbVIg7PhPI-JfO7geZ9PxFL2US7TmAms5Oebkkp4DJaRPcg/exec'; // Replace with your Google Apps Script Web App URL
+
+document.getElementById('contact-form').addEventListener('submit', async function(event) {
   event.preventDefault();
   
   const form = event.target;
   const submitButton = form.querySelector('input[type="submit"]');
   const formStatus = document.getElementById('form-status');
-  const formData = new FormData(form);
+  
+  // Get form data
+  const formData = {
+    name: form.name.value,
+    email: form.email.value,
+    message: form.message.value,
+    timestamp: new Date().toISOString()
+  };
   
   // Disable button and show loading state
   submitButton.disabled = true;
   submitButton.value = 'SENDING...';
   
-  // Send form data using fetch
-  fetch(form.action, {
-    method: 'POST',
-    body: formData,
-    headers: {
-      'Accept': 'application/json'
-    }
-  })
-  .then(response => {
-    if (response.ok) {
-      // Success
-      formStatus.style.display = 'block';
-      formStatus.style.backgroundColor = '#d4edda';
-      formStatus.style.color = '#155724';
-      formStatus.textContent = 'Message sent successfully! I\'ll get back to you soon.';
-      
-      // Reset form
-      form.reset();
-      
-      // Hide success message after 5 seconds
-      setTimeout(() => {
-        formStatus.style.display = 'none';
-      }, 5000);
-    } else {
-      throw new Error('Form submission failed');
-    }
-  })
-  .catch(error => {
+  try {
+    const response = await fetch(GOOGLE_SCRIPT_URL, {
+      method: 'POST',
+      mode: 'no-cors',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify(formData)
+    });
+    
+    // With no-cors mode, we won't get a proper response, so assume success
+    formStatus.style.display = 'block';
+    formStatus.style.backgroundColor = '#d4edda';
+    formStatus.style.color = '#155724';
+    formStatus.style.padding = '1rem';
+    formStatus.style.borderRadius = '8px';
+    formStatus.style.marginTop = '1rem';
+    formStatus.textContent = 'Message received! Thank you for reaching out. I\'ll review your message soon.';
+    
+    // Reset form
+    form.reset();
+    
+    // Hide success message after 5 seconds
+    setTimeout(() => {
+      formStatus.style.display = 'none';
+    }, 5000);
+    
+  } catch (error) {
     // Error
     formStatus.style.display = 'block';
     formStatus.style.backgroundColor = '#f8d7da';
     formStatus.style.color = '#721c24';
-    formStatus.textContent = 'Failed to send message. Please try again or email me directly at armaanlalani777@gmail.com';
+    formStatus.style.padding = '1rem';
+    formStatus.style.borderRadius = '8px';
+    formStatus.style.marginTop = '1rem';
+    formStatus.textContent = 'Failed to submit message. Please try again later.';
     
     console.error('Form Error:', error);
-  })
-  .finally(() => {
+  } finally {
     // Re-enable button
     submitButton.disabled = false;
     submitButton.value = 'SUBMIT';
-  });
+  }
 });
