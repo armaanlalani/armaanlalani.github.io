@@ -1,303 +1,48 @@
+// Navigation toggle functionality
 let mainNav = document.getElementById("js-menu");
 let navBarToggle = document.getElementById("js-navbar-toggle");
-if(navBarToggle){
+
+if (navBarToggle) {
     navBarToggle.addEventListener("click", function() {
         mainNav.classList.toggle("active");
-      });
+    });
 }
 
-/*
-var slideIndex = 1;
-showSlides(slideIndex);
-var next = document.getElementsByClassName("next");
-var prev = document.getElementsByClassName("prev");
-*/
-
-var submit = document.getElementById("submit")
-
-/*
-var morebutton = document.getElementById("mimore")
-var utmist = document.getElementById("more1p")
-var utmisti = document.getElementById("more1i")
-var show = true;
-morebutton.onclick = function(){
-  if (!show){
-    utmist.style.display = "contents";
-    utmist.style.padding = "5px";
-    utmist.style.textAlign = "justify";
-    utmisti.style.display = "block";
-    utmisti.style.float = "right";
-    utmisti.style.margin = "10px";
-    mimore.innerHTML = "--Show Less--"
-    show = true;
-  }
-  else if(show){
-    utmist.style.display = "none";
-    utmisti.style.display = "none";
-    mimore.innerHTML = "--Show More--"
-    show = false;
-  }
+// Close mobile menu when clicking on a nav link
+if (mainNav) {
+    const navLinks = mainNav.querySelectorAll('.nav-links');
+    navLinks.forEach(link => {
+        link.addEventListener('click', () => {
+            if (window.innerWidth <= 768) {
+                mainNav.classList.remove('active');
+            }
+        });
+    });
 }
 
-var morebutton1 = document.getElementById("nasdmore")
-var nasd = document.getElementById("more2p")
-var nasdi = document.getElementById("more2i")
-var nasdl = document.getElementById("more2l")
-var show1 = true;
-morebutton1.onclick = function(){
-  if (!show1){
-    nasd.style.display = "contents";
-    nasdi.style.display = "block";
-    nasdi.style.float = "right";
-    nasdi.style.margin = "10px";
-    nasdl.style.display = "flex";
-    nasdmore.innerHTML = "--Show Less--"
-    show1 = true;
-  }
-  else if(show1){
-    nasd.style.display = "none";
-    nasdi.style.display = "none";
-    nasdl.style.display = "none";
-    nasdmore.innerHTML = "--Show More--"
-    show1 = false;
-  }
+// Course toggle functions
+function toggleCourse(courseId) {
+    const courseContent = document.getElementById(courseId);
+    if (courseContent.style.display === "none" || courseContent.style.display === "") {
+        courseContent.style.display = "block";
+    } else {
+        courseContent.style.display = "none";
+    }
 }
 
-var morebutton2 = document.getElementById("tdmore")
-var td = document.getElementById("more3p")
-var tdi = document.getElementById("more3i")
-var tdl = document.getElementById("more3l")
-var show2 = true;
-morebutton2.onclick = function(){
-  if (!show2){
-    td.style.display = "contents";
-    tdi.style.display = "block";
-    tdi.style.float = "right";
-    tdi.style.margin = "10px";
-    tdl.style.display = "flex";
-    tdmore.innerHTML = "--Show Less--"
-    show2 = true;
-  }
-  else if(show2){
-    td.style.display = "none";
-    tdi.style.display = "none";
-    tdl.style.display = "none";
-    tdmore.innerHTML = "--Show More--"
-    show2 = false;
-  }
-}
-
-var morebutton3 = document.getElementById("opmore")
-var op = document.getElementById("more4p")
-var opi = document.getElementById("more4i")
-var opl = document.getElementById("more4l")
-var show3 = true;
-morebutton3.onclick = function(){
-  if (!show3){
-    op.style.display = "contents";
-    opi.style.display = "block";
-    opi.style.float = "right";
-    opi.style.margin = "10px";
-    opl.style.display = "flex";
-    opmore.innerHTML = "--Show Less--"
-    show3 = true;
-  }
-  else if(show3){
-    op.style.display = "none";
-    opi.style.display = "none";
-    opl.style.display = "none";
-    opmore.innerHTML = "--Show More--"
-    show3 = false;
-  }
-}
-*/
-
-// Get the modal
-var modal = document.getElementById("mymodal");
-
-// Get the button that opens the modal
-var btn = document.getElementsByClassName("modbutton");
-
-// Get the <span> element that closes the modal
-var remove = document.getElementsByClassName("close")[0];
-var mod = document.querySelector("#poptext");
-
-// When the user clicks the button, open the modal 
-btn[16].onclick = function() {
-  modal.style.display = "block";
-  mod.innerHTML = "<h2 class='titles'>Data Structures and Algorithms</h2><p class='paragraph'>An introduction to data structures and algorithms using both Python and C to create stacks, queues, binary search trees, trees, hash tables, graphs, etc. A few larger scale projects as well including: <ul><li><a href='https://github.com/armaanlalani/chessAI' target='_blank'>AI for Chess using Python</a></li><li><a href='https://github.com/armaanlalani/BurgerPDE' target='_blank'>Burger PDE</a></li></ul></p>";
-}
-
-btn[17].onclick = function(){
-  modal.style.display = "block";
-  mod.innerHTML = "<h2 class='titles'>Calculus I and II</h2><p class='paragraph'>A variety of advanced calculus concepts including delta-epsilon limit proofs, inverse functions, integration techniques (partial fractions, trig substitution), partial derivaties, etc.</p>";
-}
-
-btn[18].onclick = function(){
-  modal.style.display = "block";
-  mod.innerHTML = "<h2 class='titles'>Praxis I and II</h2><p class='paragraph'>Two courses that provide a strong foundation in engineering design. The first course focuses mainly on the theory behind engineering design such as the process of diverging, converging, effective methods of idea generation, leadership styles, and targeting various aspects of design. Completed the course by designing a prototype of a wearable pencil case to assist students working while commuting to school.</p><p class='paragraph'>The second course focused on applying the concepts taught during the first course. I had the opportunity to collaborate with three other students to design a mechanism or process to assist a local badminton club in collecting shuttlecocks after drills. This project consisted of applying various concepts taught earlier in the year through various brainstroming methods and utilizing comparison matrices and SCAMPER tools in order to converge towards an idea. We also had the opportunity to test our prototype at the badminton club to verify our solution and presented our innovative ideas at the annual University of Toronto's Praxis Showcase.</p><img src='praxis2.JPG' width=250px><img src='praxis3.JPG' width=250px><img src='praxis1.PNG' width=250px>"
-}
-
-btn[19].onclick = function(){
-  modal.style.display = "block";
-  mod.innerHTML = "<h2 class='titles'>Linear Algebra</h2><p class='paragraph'>A course with a very strong emphasis on formal proofs related to topics such as vector spaces, span, linear dependency, differential equations, etc.</p>";
-}
-
-btn[20].onclick = function(){
-  modal.style.display = "block";
-  mod.innerHTML = "<h2 class='titles'>Ordinary Differential Equations</h2><p class='paragraph'>A course with a focus on solving ordinary differential equations using a variety of methods depending on the question presented. Some concepts taught included: method of integrating factors, the existence uniqueness theorem, systems of linear differential equations, stability of equilibrium points, fundamental matrices, nonhomogeneous linear systems, Laplace transforms, and convolution integrals. The course also had a strong focus on applying these concepts using MATLAB which can be found by <a href='https://github.com/armaanlalani/Ordinary-Differential-Equations_MATLAB' target='_blank'>clicking on this link</a>.</p>"
-}
-
-btn[21].onclick = function(){
-  modal.style.display = "block";
-  mod.innerHTML = "<h2 class='titles'>Probability and Statistics</h2><p class='paragraph'>An introduction to various concepts relating to probability and statistics. Course concepts include: conditional probability, Baye's Rule, probability functions, cumulative distribution functions, joint probability distribution, covariance, binomial distribution, hypergeometric distribution, normal distribution, exponential distribution, transformation of variables, moment generating functions, t-distribution, interval estimates, Cramer Rao lower bounds, and one and two sample tests of hypotheses.</p>"
-}
-
-btn[22].onclick = function(){
-  modal.style.display = "block";
-  mod.innerHTML = "<h2 class='titles'>Praxis III</h2><p class='paragraph'>Praxis III is probably one of the most important and interesting courses I have taken so far in my undergraduate degree. The basis of the course involved designing an autonomous mechanism that was able to deliver electric chargers to cars located in a parking lot. This task was to be completed in teams of three and could be tackled in any which way as long as a number of restraints were followed. Prior to engaging in the project, my team and I had to complete a number of workshops on topics in rover fabrication, digital modelling, circuits and microcontrollers, motors and drivers, and interfacing. <a href='#projects'>Visit the projects section of the page</a> to learn more about my team's solution or <a href='praxisIII.pdf' download target='_blank'>download the challenge rules</a> to learn more.</p><p class='paragraph'>Due to the COVID-19 outbreak, this project was not completed due to lack of access to building and testing facilities. As a result, I completed an individual project around the concept of PID control using MATLAB. PID control is an essential concept relating to robotics to ensure any robot with wheels is able to travel as straight as possible when required. I was able to successfully implement PID control to the motion of simulated robot while also incorporating compass control which had a very significant impact on the robot's motion. Run the main_script.m file accessible through <a href='https://github.com/armaanlalani/PID_Controller' target = '_blank'>this link</a> to view the robot simulation and <a href='3.1_Armaan Lalani_Closed-Loop Controller.pdf' download target='_blank'>click on this link</a> to view my report which explains the various decisions I made.</p>"
-}
-
-btn[7].onclick = function(){
-  modal.style.display = "block";
-  mod.innerHTML = "<h2 class='titles'>Introduction to Machine Intelligence</h2><p>An introductory course on neural networks and applying them to various problems. Course content covered topics such as batch normalization, types of loss functions and optimizers, softmax, momentum, autoencoders, and various types of neural networks (CNN, RNN, GAN).</p><p>The course also provided the opportunity to apply these concepts to a series of assignments and a final project (more information in projects section). Course assignments included binary classifiers with an MLP, image classification for sign language, and determining sentence objectivity, all of which can be found on my Github."
-}
-
-btn[8].onclick = function(){
-  modal.style.display = "block";
-  mod.innerHTML = "<h2 class='titles'>Introduction to Image Analysis</h2><p>An elective course that focused on a variety of concepts relating to image manipulation and analysis including linear filters, edge detection, keypoint detection, local descriptors, homography, stereo vision, and several others. The course provided me with the opportunity to work on a project with two other peers on 3D reconstruction from various 2D images, which is explained in depth in the project section. I also had the opportunity to work on various assignments that allowed me to apply course concepts including object edge detection, seam carving of images, optical flow between images, and several others all of which can be found on my Github.</p>"
-}
-
-btn[9].onclick = function(){
-  modal.style.display = "block";
-  mod.innerHTML = "<h2 class='titles'>Matrix Algebra and Optimization</h2><p>An extremely interesting course on the uses of matrices for a variety of real-world problems and their application to Machine Intelligence. Course concepts included spectral decomposition, SVD (singular value decomposition), linear and quadratic programming, convex sets and functions, and several others. The course provided me with the opportunity to apply these concepts to a variety of intriguing assignments dealing with problems such as portfolio optimization, eigenfaces, image compression, and various others. Click on the links below to learn more about these projects.</p><p><a href='PS1.pdf' download target='_blank'>Problem Set 1, </a><a href='PS2.pdf' download target='_blank'>Problem Set 2, </a><a href='PS3.pdf' download target='_blank'>Problem Set 3, </a><a href='PS4.pdf' download target='_blank'>Problem Set 4, </a><a href='PS5.pdf' download target='_blank'>Problem Set 5, </a><a href='PS6.pdf' download target='_blank'>and Problem Set 6.</a></p>"
-}
-
-btn[10].onclick = function(){
-  modal.style.display = "block";
-  mod.innerHTML = "<h2 class='titles'>Foundations of Computing</h2><p>A course that built on various concepts from the Data Structures and Algorithms course taught during first year. The course went into depth on a number of concepts including various sorting algorithms, graph theory, hash tables, splay trees, greedy algorithms, dynamic programming, ammortized analysis, maximum flow, theory of automata, NP completeness, and various others.</p>"
-}
-
-btn[11].onclick = function(){
-  modal.style.display = "block";
-  mod.innerHTML = "<h2 class='titles'>Introduction to Databases</h2><p>A courses that focused on both an introduction to relational algebra and database queries in SQL. Topics in the first half of the course included relationship schemas, various operators, sets, constraints, and keys. The SQL portion of the course focused on operators such as selects, various forms of join, and union/intersections. The course also provided an introduction to a number of design theory algorithms including the closure algorithm, 3NF synthesis, and the chase test.</p>"
-}
-
-btn[12].onclick = function(){
-  modal.style.display = "block";
-  mod.innerHTML = "<h2 class='titles'>Systems Software</h2><p>A course that focused on the various components to Operating Systems. The course had a very strong knowledge aspect as well as application in the form of labs completed in C. Some primary course concepts included virtualization, i/o devices, interrupts, trap instructions, threads and their API, mutual exclusion, synchronization, scheduling policies, unix processes, memory management, and disks and file systems. Visit my Github to see the implementation of these concepts through the course labs.</p>"
-}
-
-btn[13].onclick = function(){
-  modal.style.display = "block";
-  mod.innerHTML = "<h2 class='titles'>Probablistic Reasoning</h2><p>An essential course for the field of Machine Learning and Artificial Intelligence. The course began with introductory concepts to probability which was built on with more advanced concepts and algorithms. Some of these concepts included maximum likelihood estimation, Bayesian hypothesis testing, linear and quadratic discriminant analysis, bayesian inference, Markov chains, Bayesian nets, Markov random fields, and hidden Markov models (forward-backward and Viterbi algorithms). The course also consisted of three labs completed in Python which enforced these concepts which can be <a href='https://github.com/armaanlalani/Probability' target = '_blank'>viewed on my Github</a>.</p>"
-}
-
-btn[14].onclick = function(){
-  modal.style.display = "block";
-  mod.innerHTML = "<h2 class='titles'>Introduction to Machine Learning</h2><p>A course that developed a number of concepts covered in Introduction to Machine Intelligence. Some of these concepts included linear regression, logistic regression, gradient descent, the mathematical interpretation of neural networks and backpropagation, clustering, density estimation, Gaussian mixture models, expectation maximization, support vector machines, and PAC learning. The courses also consisted of programming assignments where these concepts were applied, which can be viewed on my Github (<a href='https://github.com/armaanlalani/Logistic-Regression' target = '_blank'>logistic regression</a>, <a href='https://github.com/armaanlalani/Neural-Networks' target = '_blank'>neural networks</a>, <a href='https://github.com/armaanlalani/Unsupervised-Learning' target = '_blank'>unsupervised learning)</a>.</p>"
-}
-
-btn[15].onclick = function(){
-  modal.style.display = "block";
-  mod.innerHTML = "<h2 class='titles'>Artificial Intelligence</h2><p>A very interesting course that discussed various concepts relating to artificial intelligence and agent-based problems. Course concepts consisted of various search algorithms (breadth, depth), A* algorithm and heuristics, Boolean algebra and propositional logic, inference, constraint satisfiability problems, state-space search, random trees, game theory, min-max search, decision trees, Markov decision processes, dynamic programming, and reinforcement learning. The course also consisted of coding assignments in Python where these concepts were applied which can be <a href='https://github.com/armaanlalani/AI-Assignments' target = '_blank'>viewed on my Github</a>.</p>"
-}
-
-btn[0].onclick = function(){
-  modal.style.display = "block";
-  mod.innerHTML = "<h2 class='titles'>Markets and Competitive Strategy</h2><p>This course introduced concepts and frameworks relating to executing entrepreneurial business strategies in technology-based companies. The first half of the course focused on strategy and included concepts such as internal/external analysis, competitive strategies, and competitive dynamics. The second half of the course focused on marketing and included concepts such as market segmentation, product pricing and channels, promotions, etc. The course also consisted of a summative marketing plan in which each group was tasked with designing a comprehensive marketing plan for a new prospective business.</p>"
-}
-
-btn[1].onclick = function(){
-  modal.style.display = "block";
-  mod.innerHTML = "<h2 class='titles'>Accounting and Finance</h2><p>This course provided an overview of concepts in accounting and corporate finance. The first half of the course focused on the fundamentals of accounting which included concepts such as financial reporting, financial statement analysis, cash flow statements, cost concepts, working capital, etc. The second half of the course focused on the fundamentals of finance and included concepts such as valuation of stocks and bonds, project evaluation, real options, cost of capital, hedging, etc.</p>"
-}
-
-btn[2].onclick = function(){
-  modal.style.display = "block";
-  mod.innerHTML = "<h2 class='titles'>Decision Support Systems</h2><p>This couse provided an understanding on the role of decision support systems in industry and the various techniques used to implement them. The course consisted of 6 primary topics which were explored in depth including information retrieval, machine learning, recommender systems, data science, natural language processing, and social network analysis.</p>"
-}
-
-btn[3].onclick = function(){
-  modal.style.display = "block";
-  mod.innerHTML = "<h2 class='titles'>Distributed Systems</h2><p>An advanced course that provided an understanding on the operations of distributed systems as well as the opportunity to apply course concepts in a cumulative group project. Course concepts included time in distribute systems, failure models, mutual exclusion, election algorithms, consensus algorithms, synchronization, consistency models, replication methods, gossiping, hashing, peer-to-peer systems, and blockchain.</p><p>The group project was the most significant portion of the course and involved creating a distributed key-value cloud storage service that incorporated many of the course concepts including hashing, consistency, failure methods, etc. The developed code for this project can be viewed <a href='https://github.com/Pedja-Djape/Cloud-Database-ECE419' target = '_blank'>here</a>.</p>"
-}
-
-btn[4].onclick = function(){
-  modal.style.display = "block";
-  mod.innerHTML = "<h2 class='titles'>Optimization in Machine Learning</h2><p>A course that focused on the role of machine learning relating to mathematics, algorithms, and computation. The course covered common machine learning models for both regression and classification and the optimization processes for training these models.</p>"
-}
-
-btn[5].onclick = function(){
-  modal.style.display = "block";
-  mod.innerHTML = "<h2 class='titles'>Capstone</h2><p>Information on my capstone project can be found in 'Machine Learning Consultant at Perimeter Medical Imaging AI' in the Experience Section.</p>"
-}
-
-btn[6].onclick = function(){
-  modal.style.display = "block";
-  mod.innerHTML = "<h2 class='titles'>Thesis</h2><p>Information on my thesis can be found in 'Data Science Consultant at Center for Management of Technology and Entrepreneurship' in the Experience Section.</p>"
-}
-
-remove.onclick = function() {
-  modal.style.display = "none";
-}
-
-/*
-next[0].onclick = function(){
-  showSlides(slideIndex += 1);
-}
-
-prev[0].onclick = function(){
-  showSlides(slideIndex += -1);
-}
-*/
-
-/*
-function currentSlide(n) {
-  showSlides(slideIndex = n);
-}
-
-function showSlides(n) {
-  var i;
-  var slides = document.getElementsByClassName("mySlides");
-  var dots = document.getElementsByClassName("dot");
-  if (n > slides.length) {slideIndex = 1}    
-  if (n < 1) {slideIndex = slides.length}
-  for (i = 0; i < slides.length; i++) {
-      slides[i].style.display = "none";  
-  }
-  for (i = 0; i < dots.length; i++) {
-      dots[i].className = dots[i].className.replace(" active", "");
-  }
-  slides[slideIndex-1].style.display = "block";  
-  dots[slideIndex-1].className += " active";
-}
-*/
-
-var mybutton = document.getElementById("myBtn");
-
-// When the user scrolls down 20px from the top of the document, show the button
-window.onscroll = function() {scrollFunction()};
-
-function scrollFunction() {
-  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-    mybutton.style.display = "block";
-  } else {
-    mybutton.style.display = "none";
-  }
-}
-
-// When the user clicks on the button, scroll to the top of the document
-function topFunction() {
-  document.body.scrollTop = 0;
-  document.documentElement.scrollTop = 0;
-}
+// Initialize all course contents to be hidden
+document.addEventListener('DOMContentLoaded', function() {
+    const allCourseContents = document.querySelectorAll('.course-content');
+    allCourseContents.forEach(content => {
+        content.style.display = 'none';
+    });
+});
 
 function myFunction_ob() {
   var moreText = document.getElementById("more_ob");
   var btnText = document.getElementById("moreBtn_ob");
 
-  if (moreText.style.display === "none") {
+  if (moreText.style.display === "none" || moreText.style.display === "") {
     btnText.innerHTML = "Read Less"; 
     moreText.style.display = "inline";
   } else {
@@ -310,7 +55,7 @@ function myFunction_th() {
   var moreText = document.getElementById("more_th");
   var btnText = document.getElementById("moreBtn_th");
 
-  if (moreText.style.display === "none") {
+  if (moreText.style.display === "none" || moreText.style.display === "") {
     btnText.innerHTML = "Read Less"; 
     moreText.style.display = "inline";
   } else {
@@ -323,7 +68,7 @@ function myFunction_pm() {
   var moreText = document.getElementById("more_pm");
   var btnText = document.getElementById("moreBtn_pm");
 
-  if (moreText.style.display === "none") {
+  if (moreText.style.display === "none" || moreText.style.display === "") {
     btnText.innerHTML = "Read Less"; 
     moreText.style.display = "inline";
   } else {
@@ -336,7 +81,7 @@ function myFunction_op() {
   var moreText = document.getElementById("more_op");
   var btnText = document.getElementById("moreBtn_op");
 
-  if (moreText.style.display === "none") {
+  if (moreText.style.display === "none" || moreText.style.display === "") {
     btnText.innerHTML = "Read Less"; 
     moreText.style.display = "inline";
   } else {
@@ -349,7 +94,7 @@ function myFunction_ut() {
   var moreText = document.getElementById("more_ut");
   var btnText = document.getElementById("moreBtn_ut");
 
-  if (moreText.style.display === "none") {
+  if (moreText.style.display === "none" || moreText.style.display === "") {
     btnText.innerHTML = "Read Less"; 
     moreText.style.display = "inline";
   } else {
@@ -362,7 +107,7 @@ function myFunction_cor() {
   var moreText = document.getElementById("more_cor");
   var btnText = document.getElementById("moreBtn_cor");
 
-  if (moreText.style.display === "none") {
+  if (moreText.style.display === "none" || moreText.style.display === "") {
     btnText.innerHTML = "Read Less"; 
     moreText.style.display = "inline";
   } else {
@@ -375,7 +120,7 @@ function myFunction_td() {
   var moreText = document.getElementById("more_td");
   var btnText = document.getElementById("moreBtn_td");
 
-  if (moreText.style.display === "none") {
+  if (moreText.style.display === "none" || moreText.style.display === "") {
     btnText.innerHTML = "Read Less"; 
     moreText.style.display = "inline";
   } else {
@@ -388,7 +133,7 @@ function myFunction_gp() {
   var moreText = document.getElementById("more_gp");
   var btnText = document.getElementById("moreBtn_gp");
 
-  if (moreText.style.display === "none") {
+  if (moreText.style.display === "none" || moreText.style.display === "") {
     btnText.innerHTML = "Read Less"; 
     moreText.style.display = "inline";
   } else {
@@ -401,7 +146,7 @@ function myFunction_ia() {
   var moreText = document.getElementById("more_ia");
   var btnText = document.getElementById("moreBtn_ia");
 
-  if (moreText.style.display === "none") {
+  if (moreText.style.display === "none" || moreText.style.display === "") {
     btnText.innerHTML = "Read Less"; 
     moreText.style.display = "inline";
   } else {
@@ -414,7 +159,7 @@ function myFunction_p3() {
   var moreText = document.getElementById("more_p3");
   var btnText = document.getElementById("moreBtn_p3");
 
-  if (moreText.style.display === "none") {
+  if (moreText.style.display === "none" || moreText.style.display === "") {
     btnText.innerHTML = "Read Less"; 
     moreText.style.display = "inline";
   } else {
@@ -427,7 +172,7 @@ function myFunction_be() {
   var moreText = document.getElementById("more_be");
   var btnText = document.getElementById("moreBtn_be");
 
-  if (moreText.style.display === "none") {
+  if (moreText.style.display === "none" || moreText.style.display === "") {
     btnText.innerHTML = "Read Less"; 
     moreText.style.display = "inline";
   } else {
@@ -440,7 +185,7 @@ function myFunction_p2() {
   var moreText = document.getElementById("more_p2");
   var btnText = document.getElementById("moreBtn_p2");
 
-  if (moreText.style.display === "none") {
+  if (moreText.style.display === "none" || moreText.style.display === "") {
     btnText.innerHTML = "Read Less"; 
     moreText.style.display = "inline";
   } else {
@@ -448,3 +193,22 @@ function myFunction_p2() {
     moreText.style.display = "none";
   }
 }
+
+// Initialize Read More sections and prevent transition flicker on page load
+document.addEventListener('DOMContentLoaded', function() {
+  document.body.classList.remove('preload');
+  
+  // Initialize all Read More sections to be hidden
+  const readMoreSections = [
+    'more_ob', 'more_th', 'more_pm', 'more_op', 'more_ut', 
+    'more_cor', 'more_td', 'more_gp', 'more_ia', 'more_p3', 
+    'more_be', 'more_p2'
+  ];
+  
+  readMoreSections.forEach(id => {
+    const element = document.getElementById(id);
+    if (element) {
+      element.style.display = 'none';
+    }
+  });
+});
