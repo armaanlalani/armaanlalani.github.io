@@ -224,4 +224,61 @@ document.addEventListener('DOMContentLoaded', function() {
       element.style.display = 'none';
     }
   });
+
+});
+
+// Contact form submission
+document.getElementById('contact-form').addEventListener('submit', function(event) {
+  event.preventDefault();
+  
+  const form = event.target;
+  const submitButton = form.querySelector('input[type="submit"]');
+  const formStatus = document.getElementById('form-status');
+  const formData = new FormData(form);
+  
+  // Disable button and show loading state
+  submitButton.disabled = true;
+  submitButton.value = 'SENDING...';
+  
+  // Send form data using fetch
+  fetch(form.action, {
+    method: 'POST',
+    body: formData,
+    headers: {
+      'Accept': 'application/json'
+    }
+  })
+  .then(response => {
+    if (response.ok) {
+      // Success
+      formStatus.style.display = 'block';
+      formStatus.style.backgroundColor = '#d4edda';
+      formStatus.style.color = '#155724';
+      formStatus.textContent = 'Message sent successfully! I\'ll get back to you soon.';
+      
+      // Reset form
+      form.reset();
+      
+      // Hide success message after 5 seconds
+      setTimeout(() => {
+        formStatus.style.display = 'none';
+      }, 5000);
+    } else {
+      throw new Error('Form submission failed');
+    }
+  })
+  .catch(error => {
+    // Error
+    formStatus.style.display = 'block';
+    formStatus.style.backgroundColor = '#f8d7da';
+    formStatus.style.color = '#721c24';
+    formStatus.textContent = 'Failed to send message. Please try again or email me directly at armaanlalani777@gmail.com';
+    
+    console.error('Form Error:', error);
+  })
+  .finally(() => {
+    // Re-enable button
+    submitButton.disabled = false;
+    submitButton.value = 'SUBMIT';
+  });
 });

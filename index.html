@@ -539,15 +539,15 @@
           <div class="section-container">
           <h2 class="section-title">Contact</h2>
           <p class="section-intro">Feel free to contact me if you have any questions about my experience or want to learn more.</p>
-          <form action="mailto:armaanlalani777@gmail.com" method="post" enctype="text/plain">      
-            <input name="name" type="text" class="feedback-input" placeholder="Name" />   
-            <input name="email" type="text" class="feedback-input" placeholder="Email" />
-            <textarea name="text" class="feedback-input" placeholder="Comment"></textarea>
+          <form id="contact-form" action="https://formspree.io/f/xvgoepbd" method="POST">      
+            <input name="name" type="text" class="feedback-input" placeholder="Name" required />   
+            <input name="email" type="email" class="feedback-input" placeholder="Email" required />
+            <textarea name="message" class="feedback-input" placeholder="Message" required></textarea>
             <input type="submit" value="SUBMIT"/>
           </form>
+          <div id="form-status" style="display: none; margin-top: 1rem; padding: 1rem; border-radius: 8px; text-align: center;"></div>
           </div>
         </section>
-        
         <script src="script_al.js" defer></script>
     </body>
     
