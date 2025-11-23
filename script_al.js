@@ -129,6 +129,19 @@ function myFunction_td() {
   }
 }
 
+function myFunction_gai() {
+  var moreText = document.getElementById("more_gai");
+  var btnText = document.getElementById("moreBtn_gai");
+
+  if (moreText.style.display === "none" || moreText.style.display === "") {
+    btnText.innerHTML = "Read Less"; 
+    moreText.style.display = "inline";
+  } else {
+    btnText.innerHTML = "Read More"; 
+    moreText.style.display = "none";
+  }
+}
+
 function myFunction_gp() {
   var moreText = document.getElementById("more_gp");
   var btnText = document.getElementById("moreBtn_gp");
@@ -201,7 +214,7 @@ document.addEventListener('DOMContentLoaded', function() {
   // Initialize all Read More sections to be hidden
   const readMoreSections = [
     'more_ob', 'more_th', 'more_pm', 'more_op', 'more_ut', 
-    'more_cor', 'more_td', 'more_gp', 'more_ia', 'more_p3', 
+    'more_cor', 'more_td', 'more_gai', 'more_gp', 'more_ia', 'more_p3', 
     'more_be', 'more_p2'
   ];
   
