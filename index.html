@@ -1,554 +1,764 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta name="description" content="Armaan Lalani - Data Scientist specializing in Machine Learning and AI. Portfolio showcasing experience at Visa, Overbond, and OPTrust.">
-        <meta name="author" content="Armaan Lalani">
-        <title>Armaan Lalani - Data Scientist & ML Engineer</title>
-        <link rel="stylesheet" href="styles_al.css" type="text/css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
-    </head>
-    <body>
-        <nav class="navbar">
-            <div class="nav-container">
-                <a href="#" class="logo">Armaan Lalani</a>
-                <button class="navbar-toggle" id="js-navbar-toggle" aria-label="Toggle navigation">
-                    <i class="fas fa-bars"></i>
-                </button>
-                <ul class="main-nav" id="js-menu">
-                  <li>
-                    <a href="#" class="nav-links">Home</a>
-                  </li>
-                  <li>
-                    <a href="#experience" class="nav-links">Experience</a>
-                  </li>
-                  <li>
-                    <a href="#education" class="nav-links">Education</a>
-                  </li>
-                  <li>
-                    <a href="#projects" class="nav-links">Projects</a>
-                  </li>
-                  <li>
-                    <a href="#contact" class="nav-links">Contact</a>
-                  </li>
-                </ul>
-            </div>
-          </nav>
-          
-          <button onclick="topFunction()" id="myBtn" title="Go to top" aria-label="Scroll to top">
-            <i class="fas fa-arrow-up"></i>
-          </button>
-          
-        <section class="hero">
-          <div class="hero-content">
-            <img src="./Content/ME.jpeg" class="profile-image" alt="Armaan Lalani portrait" width="200" height="200">
-            <h1 class="hero-title">Armaan Lalani</h1>
-            <p class="hero-subtitle">Data Scientist | Machine Learning Developer | AI Specialist</p>
-            <p class="hero-description">My name is Armaan Lalani and I am current Data Scientist at Visa Consulting & Analytics. I recently graduated from the Master of Management Analytics program at the Rotman School of Management and had the privilege of being recognized as a Vector Scholar in AI for the 2024-2025 academic year. I previously worked as a Data Scientist at Overbond and graduated from Engineering Science at the University of Toronto with a Machine Intelligence Major combined with an Engineering Business Certificate in 2023. I am extremely passionate about machine learning and data science and am seeking to gain meaningful experience in the field through my formal education, external projects, and employment experience. Feel free to visit my LinkedIn or Github to learn more about me or navigate to the other sections of my page.</p>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Armaan Lalani is a Data Scientist at Visa Consulting & Analytics specializing in machine learning and AI. Portfolio of experience, education, and projects.">
+  <meta name="author" content="Armaan Lalani">
+  <meta name="color-scheme" content="light dark">
+  <title>Armaan Lalani | Data Scientist</title>
+  <script>
+    // Apply saved theme before paint to avoid a flash
+    document.documentElement.classList.add('js');
+    try {
+      var t = localStorage.getItem('theme');
+      if (t === 'light' || t === 'dark') document.documentElement.setAttribute('data-theme', t);
+    } catch (e) {}
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="styles_al.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
 
-            <div class="social-links">
-              <a href="https://www.linkedin.com/in/armaan-lalani/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn Profile">
-                <i class="fab fa-linkedin"></i>
-              </a>
-              <a href="https://github.com/armaanlalani" target="_blank" rel="noopener noreferrer" aria-label="GitHub Profile">
-                <i class="fab fa-github"></i>
-              </a>
+  <!-- Navigation -->
+  <header class="site-header">
+    <nav class="nav container" aria-label="Primary">
+      <a href="#top" class="brand" aria-label="Armaan Lalani, back to top">
+        <span class="brand-mark">AL</span>
+        <span class="brand-name">Armaan Lalani</span>
+      </a>
+      <ul class="nav-menu" id="nav-menu">
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#experience" class="nav-link">Experience</a></li>
+        <li><a href="#education" class="nav-link">Education</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+      <div class="nav-actions">
+        <button class="icon-btn" id="theme-toggle" type="button" aria-label="Toggle dark mode">
+          <i class="fas fa-moon icon-moon" aria-hidden="true"></i>
+          <i class="fas fa-sun icon-sun" aria-hidden="true"></i>
+        </button>
+        <button class="icon-btn nav-toggle" id="nav-toggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="nav-menu">
+          <i class="fas fa-bars" aria-hidden="true"></i>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <main id="main">
+    <!-- Hero -->
+    <section class="hero" id="top">
+      <div class="container hero-grid">
+        <div class="hero-text">
+          <p class="eyebrow">Data Scientist at Visa Consulting &amp; Analytics</p>
+          <h1 class="hero-title">Armaan Lalani</h1>
+          <p class="hero-subtitle">Data Scientist <span aria-hidden="true">·</span> Machine Learning Developer <span aria-hidden="true">·</span> AI Specialist</p>
+          <div class="hero-actions">
+            <a href="#contact" class="btn btn-primary">Get in touch</a>
+            <a href="https://www.linkedin.com/in/armaan-lalani/" class="btn btn-ghost" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin" aria-hidden="true"></i> LinkedIn</a>
+            <a href="https://github.com/armaanlalani" class="btn btn-ghost" target="_blank" rel="noopener noreferrer"><i class="fab fa-github" aria-hidden="true"></i> GitHub</a>
+          </div>
+        </div>
+        <div class="hero-photo">
+          <img src="./Content/ME.jpeg" alt="Portrait of Armaan Lalani" width="1536" height="2049">
+        </div>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section class="section" id="about">
+      <div class="container about-grid">
+        <div>
+          <p class="section-label">About</p>
+          <h2 class="section-title">Hi, I'm Armaan.</h2>
+          <p>I am currently a Data Scientist at Visa Consulting &amp; Analytics. I recently graduated from the Master of Management Analytics program at the Rotman School of Management, where I had the privilege of being recognized as a Vector Scholar in AI for the 2024–2025 academic year.</p>
+          <p>I previously worked as a Data Scientist at Overbond and graduated from Engineering Science at the University of Toronto in 2023 with a major in Machine Intelligence, combined with an Engineering Business Certificate.</p>
+          <p>I am extremely passionate about machine learning and data science, and I am always seeking meaningful experience in the field through formal education, external projects, and work. Feel free to visit my <a href="https://www.linkedin.com/in/armaan-lalani/" target="_blank" rel="noopener noreferrer">LinkedIn</a> or <a href="https://github.com/armaanlalani" target="_blank" rel="noopener noreferrer">GitHub</a> to learn more about me, or explore the sections below.</p>
+        </div>
+        <dl class="facts">
+          <div class="fact">
+            <dt>Currently</dt>
+            <dd>Data Scientist, Visa Consulting &amp; Analytics</dd>
+          </div>
+          <div class="fact">
+            <dt>Education</dt>
+            <dd>MMA, Rotman School of Management<br>BASc Engineering Science (Machine Intelligence), University of Toronto</dd>
+          </div>
+          <div class="fact">
+            <dt>Recognition</dt>
+            <dd>Vector Scholar in AI, 2024–2025</dd>
+          </div>
+          <div class="fact">
+            <dt>Interests</dt>
+            <dd>Machine learning, quantitative finance, sports analytics</dd>
+          </div>
+        </dl>
+      </div>
+    </section>
+
+    <!-- Experience -->
+    <section class="section section-alt" id="experience">
+      <div class="container">
+        <header class="section-head">
+          <p class="section-label">Experience</p>
+          <h2 class="section-title">Where I've worked</h2>
+        </header>
+
+        <ol class="timeline">
+          <li class="role reveal">
+            <div class="role-logo"><img src="./Content/visa.png" alt="Visa logo" loading="lazy"></div>
+            <div class="role-body">
+              <div class="role-head">
+                <div>
+                  <h3 class="role-title">Data Scientist</h3>
+                  <p class="role-org">Visa Consulting &amp; Analytics</p>
+                </div>
+                <p class="role-date">July 2025 – Present</p>
+              </div>
+            </div>
+          </li>
+
+          <li class="role reveal">
+            <div class="role-logo"><img src="./Content/stathletes.png" alt="Stathletes logo" loading="lazy"></div>
+            <div class="role-body">
+              <div class="role-head">
+                <div>
+                  <h3 class="role-title">Data Scientist</h3>
+                  <p class="role-org">Stathletes</p>
+                </div>
+                <p class="role-date">January 2025 – June 2025</p>
+              </div>
+            </div>
+          </li>
+
+          <li class="role reveal">
+            <div class="role-logo"><img src="./Content/rotman.png" alt="Rotman School of Management logo" loading="lazy"></div>
+            <div class="role-body">
+              <div class="role-head">
+                <div>
+                  <h3 class="role-title">ML Research Assistant</h3>
+                  <p class="role-org">Rotman FinHub</p>
+                </div>
+                <p class="role-date">January 2025 – May 2025</p>
+              </div>
+            </div>
+          </li>
+
+          <li class="role reveal">
+            <div class="role-logo"><img src="./Content/overbond.jpeg" alt="Overbond logo" loading="lazy"></div>
+            <div class="role-body">
+              <div class="role-head">
+                <div>
+                  <h3 class="role-title">Data Scientist</h3>
+                  <p class="role-org">Overbond</p>
+                </div>
+                <p class="role-date">February 2023 – July 2024</p>
+              </div>
+              <p class="role-summary">Lead developer of Overbond's Smart Order Routing product and a developer on the Layer2 Bond Pricing model for fixed income trading.</p>
+              <ul class="tags"><li>Machine Learning</li><li>Fixed Income</li><li>Linear Programming</li><li>Gradient Boosting</li></ul>
+              <details class="more">
+                <summary><span class="more-closed">Read more</span><span class="more-open">Read less</span> <i class="fas fa-chevron-down" aria-hidden="true"></i></summary>
+                <div class="more-body">
+                  <p>I started working part time at Overbond during the final two months of my undergraduate degree and transitioned to a full-time role in May 2023. As a Data Scientist, I was involved in two major projects: Smart Order Routing (SOR) and Layer2 Bond Pricing.</p>
+                  <h4>Smart Order Routing</h4>
+                  <p>I was the lead owner and developer of SOR, a new product in Overbond's suite. The goal of SOR is to provide algorithmic and aggregated fixed income trading routes in order to minimize transaction costs. Fixed income trading typically involves four major venues: Over the Counter (OTC), Request for Quote (RFQ), All to All, and Direct Channels. Traders usually have to check several venues and channels to find the best path to execution, which is the problem SOR aims to solve.</p>
+                  <p>OTC and RFQ prices are predicted using trained machine learning models, and associated quantities are estimated using dealer inventory and market capacity analytics built on Transaction Cost Analysis (TCA). After gathering prices, venues, and available dealers, a linear program solves for the best path to execution across the available sources.</p>
+                  <h4>Layer2 Bond Pricing</h4>
+                  <p>I was also a developer for Overbond's Layer2 Bond Pricing Model. The goal of Layer2 is to provide live RFQ pricing analytics so clients can minimize transaction costs while also winning the RFQ auction. The model is a boosting algorithm that uses decision trees to predict bond prices from bond-level, issuer-level, and sector-level analytics.</p>
+                  <p>I was responsible for conducting backtests for clients, which involved training individual models on each client's historical RFQ data. I owned every stage of the data pipeline: exploratory data analysis, data cleansing, model training, model output analysis, and presentation of results.</p>
+                </div>
+              </details>
+            </div>
+          </li>
+
+          <li class="role reveal">
+            <div class="role-logo"><img src="./Content/cmte.png" alt="CMTE logo" loading="lazy"></div>
+            <div class="role-body">
+              <div class="role-head">
+                <div>
+                  <h3 class="role-title">Data Science Consultant</h3>
+                  <p class="role-org">Center for Management of Technology and Entrepreneurship</p>
+                </div>
+                <p class="role-date">September 2022 – April 2023</p>
+              </div>
+              <p class="role-summary">Fourth-year thesis comparing handcrafted and deep feature-based methods for detecting synthetic speech at a major financial institution.</p>
+              <ul class="tags"><li>Deep Learning</li><li>Speech</li><li>Security</li></ul>
+              <details class="more">
+                <summary><span class="more-closed">Read more</span><span class="more-open">Read less</span> <i class="fas fa-chevron-down" aria-hidden="true"></i></summary>
+                <div class="more-body">
+                  <p>My fourth-year thesis was completed through U of T's Center for Management of Technology and Entrepreneurship with a financial institution (The Bank), which cannot be disclosed due to an NDA.</p>
+                  <p>The rise of deepfake technology in recent years has underscored the importance of distinguishing between authentic and synthetic content. For established financial institutions such as The Bank, ensuring security and confidentiality for clients and themselves is a top priority. However, voiceprint technology, which relies on vocal features to authenticate clients over the phone, is vulnerable to synthesized speech. The Bank recognizes the potential risks posed by synthetic speech and the need to identify effective mitigation techniques.</p>
+                  <p>To this end, the study compares the performance of handcrafted and deep feature-based methods of synthetic speech detection across several key metrics: accuracy, equal error rate, processing time, and trainable parameters. Two models were developed and tested, and the results indicate that the deep features model outperforms the handcrafted features model on three of the four metrics, suggesting that it should be prioritized for implementation.</p>
+                  <div class="link-row">
+                    <a class="btn btn-small" href="./Content/Thesis.pdf" target="_blank" rel="noopener"><i class="fas fa-file-pdf" aria-hidden="true"></i> Thesis Report</a>
+                  </div>
+                </div>
+              </details>
+            </div>
+          </li>
+
+          <li class="role reveal">
+            <div class="role-logo"><img src="./Content/perimeter.jpeg" alt="Perimeter Medical Imaging AI logo" loading="lazy"></div>
+            <div class="role-body">
+              <div class="role-head">
+                <div>
+                  <h3 class="role-title">Machine Learning Consultant</h3>
+                  <p class="role-org">Perimeter Medical Imaging AI</p>
+                </div>
+                <p class="role-date">September 2022 – December 2022</p>
+              </div>
+              <p class="role-summary">Engineering Capstone using deep learning to denoise OCT images and shorten margin assessments during breast-conserving surgery.</p>
+              <ul class="tags"><li>Deep Learning</li><li>Medical Imaging</li><li>Denoising</li></ul>
+              <details class="more">
+                <summary><span class="more-closed">Read more</span><span class="more-open">Read less</span> <i class="fas fa-chevron-down" aria-hidden="true"></i></summary>
+                <div class="more-body">
+                  <p>My fourth-year Engineering Capstone project was completed in collaboration with Perimeter Medical Imaging, an AI company that uses deep learning models to help surgeons determine whether cancerous tissue was successfully removed during breast-conserving surgery (BCS).</p>
+                  <p>The primary problem presented by Perimeter was the time required to conduct a margin assessment, the process used to determine from OCT images whether the surgeon successfully removed the tumor. An accurate margin assessment requires denoised OCT images, which were produced by combining two signals to reduce noise, taking approximately two to three minutes.</p>
+                  <p>This timeframe was problematic for two reasons: it reduces the number of patients a surgeon is able to see, and it can keep patients under unnecessary sedation if the assessment reveals no malignant tissue. Our solution used a deep learning model to reduce the noise in individual signals, reducing the total time needed to conduct a margin assessment.</p>
+                  <div class="link-row">
+                    <a class="btn btn-small" href="./Content/Capstone.pdf" target="_blank" rel="noopener"><i class="fas fa-file-pdf" aria-hidden="true"></i> Capstone Report</a>
+                  </div>
+                </div>
+              </details>
+            </div>
+          </li>
+
+          <li class="role reveal">
+            <div class="role-logo"><img src="./Content/optrust.jpeg" alt="OPTrust logo" loading="lazy"></div>
+            <div class="role-body">
+              <div class="role-head">
+                <div>
+                  <h3 class="role-title">CMG Investment Co-op, Total Fund Completion Portfolio Strategies (Quant)</h3>
+                  <p class="role-org">OPTrust</p>
+                </div>
+                <p class="role-date">May 2021 – July 2022</p>
+              </div>
+              <p class="role-summary">Built an equity regime detection model, a bootstrapping model for testing risk mitigants, and a neural network for futures rolls during my PEY co-op.</p>
+              <ul class="tags"><li>Quant Research</li><li>Random Forests</li><li>Simulation</li><li>Bloomberg</li></ul>
+              <details class="more">
+                <summary><span class="more-closed">Read more</span><span class="more-open">Read less</span> <i class="fas fa-chevron-down" aria-hidden="true"></i></summary>
+                <div class="more-body">
+                  <p>I had the tremendous opportunity to work at OPTrust during my Professional Experience Year (PEY) as a CMG Investment Co-op on the TFCPS team. My role and team were heavily focused on making strong data-driven investment decisions using a variety of techniques from data science and machine learning.</p>
+                  <h4>Equity regime detection</h4>
+                  <p>The model consisted of two parts: first, using L1 trend filtering to numerically identify historical periods of growth and decline in equity, and second, training a random forest on several macroeconomic indicators to predict regime switches. The model performed well out of sample and was able to predict the regime switches during the Global Financial Crisis and COVID. It continues to be used in production for Severe Market Decline and Systematic Risk Allocation.</p>
+                  <h4>Risk mitigant bootstrapping</h4>
+                  <p>This model tests the effectiveness of various risk-mitigating strategies against the S&amp;P. It samples historical returns to create a simulated path environment over a specified period, then introduces a risk mitigant (gold, bonds, currencies, etc.) or a strategy (trend, options, etc.) to attempt to reduce the VaR95 of the original portfolio by a target percentage. The investment division now uses it to evaluate strategies.</p>
+                  <h4>Futures roll prediction</h4>
+                  <p>I built a convolutional neural network to predict price movements of futures rolls and created the entire data pipeline: extracting the appropriate roll tickers based on the roll schedule, querying Bloomberg for price, volume, open interest, and Commitment of Traders data, and preprocessing the data for the model. The model did not perform as well as expected, but the project taught me a lot about rolling futures and the capabilities of the Bloomberg Terminal.</p>
+                  <h4>Reporting</h4>
+                  <p>I also worked on a number of reporting projects, including daily reports on FX exposure and P&amp;L, analysis of model slippage for Risk Reduced Equities using intraday data, and reporting emails for various fund portfolios.</p>
+                </div>
+              </details>
+            </div>
+          </li>
+
+          <li class="role reveal">
+            <div class="role-logo"><img src="./Content/utmist.png" alt="UTMIST logo" loading="lazy"></div>
+            <div class="role-body">
+              <div class="role-head">
+                <div>
+                  <h3 class="role-title">Project Developer</h3>
+                  <p class="role-org">University of Toronto Machine Intelligence Student Team (UTMIST)</p>
+                </div>
+                <p class="role-date">July 2020 – May 2022</p>
+              </div>
+              <p class="role-summary">Built the sentence-to-word segmentation component of a handwriting image-to-text converter.</p>
+              <ul class="tags"><li>Computer Vision</li><li>ResNet</li><li>Python</li></ul>
+              <details class="more">
+                <summary><span class="more-closed">Read more</span><span class="more-open">Read less</span> <i class="fas fa-chevron-down" aria-hidden="true"></i></summary>
+                <div class="more-body">
+                  <p>During the 2021–2022 academic year, I worked as a Project Developer for UTMIST. My team built an image-to-text converter in Python, and I was tasked with implementing the sentence-to-word segmentation feature.</p>
+                  <p>Using the IAM Dataset, I built a dataloader class containing examples of handwritten lines along with the bounding boxes for each individual word. I then reconstructed an existing model using a ResNet architecture to train. The model was not able to converge on the ground truth bounding boxes, so we moved to a pretrained model, which located the bounding boxes accurately on the dataloader I built and was used in the final pipeline.</p>
+                  <p>For more information, visit the <a href="https://utmist.gitlab.io/" target="_blank" rel="noopener noreferrer">UTMIST website</a>.</p>
+                </div>
+              </details>
+            </div>
+          </li>
+
+          <li class="role reveal">
+            <div class="role-logo"><img src="./Content/manulife.jpeg" alt="Manulife logo" loading="lazy"></div>
+            <div class="role-body">
+              <div class="role-head">
+                <div>
+                  <h3 class="role-title">IT Analyst</h3>
+                  <p class="role-org">Coreio Inc. &amp; Manulife, North American Service Desk</p>
+                </div>
+                <p class="role-date">March 2020 – June 2020</p>
+              </div>
+              <p class="role-summary">Provided remote technical support to Manulife employees for system access, application access, and connectivity issues.</p>
+              <ul class="tags"><li>IT Support</li><li>Troubleshooting</li></ul>
+              <details class="more">
+                <summary><span class="more-closed">Read more</span><span class="more-open">Read less</span> <i class="fas fa-chevron-down" aria-hidden="true"></i></summary>
+                <div class="more-body">
+                  <p>As an IT support analyst at Coreio, I provided quality support to Manulife employees with issues including system access, application access, and connectivity. Due to COVID-19, the position often required me to remote into employees' computers and troubleshoot issues with Manulife account access, mainframe access, VPN connectivity, and dual-monitor setups.</p>
+                  <p class="skills-label">Skills developed</p>
+                  <dl class="skills">
+                    <div><dt>Problem Analysis</dt><dd>Issues raised by employees were often complicated, which taught me the importance of devising a strategy based on previous calls and information.</dd></div>
+                    <div><dt>Quality Assurance</dt><dd>Employees facing recurring technical issues needed very thorough support to minimize the chance of future problems.</dd></div>
+                    <div><dt>Collaboration</dt><dd>Many Coreio employees were new to supporting Manulife, which demanded a high level of communication and collaboration within the team.</dd></div>
+                  </dl>
+                </div>
+              </details>
+            </div>
+          </li>
+
+          <li class="role reveal">
+            <div class="role-logo"><img src="./Content/td.png" alt="TD Bank logo" loading="lazy"></div>
+            <div class="role-body">
+              <div class="role-head">
+                <div>
+                  <h3 class="role-title">Business Architecture Intern</h3>
+                  <p class="role-org">TD Bank</p>
+                </div>
+                <p class="role-date">April 2019 – August 2019</p>
+              </div>
+              <p class="role-summary">Developed a capabilities roadmap for TD's North American Contact Centre and presented findings to its vice presidents.</p>
+              <ul class="tags"><li>Data Analysis</li><li>Strategy</li><li>Presentations</li></ul>
+              <details class="more">
+                <summary><span class="more-closed">Read more</span><span class="more-open">Read less</span> <i class="fas fa-chevron-down" aria-hidden="true"></i></summary>
+                <div class="more-body">
+                  <p>As a Business Architecture Intern for TD's North American Contact Centre (NACC), I developed a detailed roadmap for capabilities related to call centre agents, the TD app and website, and TD Clari. I built an active database of capabilities currently in development as well as projects expected to be undertaken in the future.</p>
+                  <p>I also focused on application alerts, performing a thorough current state analysis, future state analysis, and roadmap that was presented to several vice presidents of NACC. Lastly, I worked with a group of interns to devise improvements to the intern experience, which we presented to TD's talent acquisition team.</p>
+                  <p class="skills-label">Skills developed</p>
+                  <dl class="skills">
+                    <div><dt>Data Analysis</dt><dd>A large part of the position involved analyzing data on customer–agent interactions and making informed decisions based on the conclusions.</dd></div>
+                    <div><dt>Presentation Delivery</dt><dd>The role involved a number of small and large projects that were presented to senior management for approval and feedback.</dd></div>
+                  </dl>
+                </div>
+              </details>
+            </div>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- Education -->
+    <section class="section" id="education">
+      <div class="container">
+        <header class="section-head">
+          <p class="section-label">Education</p>
+          <h2 class="section-title">What I've studied</h2>
+        </header>
+
+        <article class="edu-card reveal">
+          <div class="edu-head">
+            <div>
+              <h3 class="edu-degree">Master of Management Analytics</h3>
+              <p class="edu-school">Rotman School of Management, University of Toronto</p>
+            </div>
+            <p class="edu-date">August 2024 – July 2025</p>
+          </div>
+          <p>The MMA program at Rotman is recognized by the Vector Institute for delivering a curriculum that equips graduates with the skills required to succeed in AI-related roles. I pursued the program to build on the AI and ML experience I gained through Engineering Science and my work experience, and was named a Vector Scholar in AI for 2024–2025.</p>
+          <p class="course-label">Selected coursework</p>
+          <ul class="chips">
+            <li><span class="chip">Leveraging AI and Deep Learning Tools in Marketing</span></li>
+            <li><span class="chip">Analytical Methods in Finance</span></li>
+            <li><span class="chip">Service Analytics for Management Analytics</span></li>
+            <li><span class="chip">Optimizing Supply Chain Management and Logistics</span></li>
+            <li><span class="chip">Machine Learning Analytics</span></li>
+            <li><span class="chip">Structuring and Visualizing Data for Analytics</span></li>
+          </ul>
+        </article>
+
+        <article class="edu-card reveal">
+          <div class="edu-head">
+            <div>
+              <h3 class="edu-degree">BASc, Engineering Science (Machine Intelligence)</h3>
+              <p class="edu-school">University of Toronto · Engineering Business Certificate</p>
+            </div>
+            <p class="edu-date">September 2018 – April 2023</p>
+          </div>
+          <p class="edu-hint">Select a course to read more about it.</p>
+
+          <!-- Fourth year -->
+          <div class="course-group" data-course-group>
+            <p class="course-label">Fourth Year <span class="course-years">2022–2023</span></p>
+            <ul class="chips">
+              <li><button type="button" class="chip chip-btn" aria-expanded="false" aria-controls="c-markets">Markets and Competitive Strategy</button></li>
+              <li><button type="button" class="chip chip-btn" aria-expanded="false" aria-controls="c-accounting">Accounting and Finance</button></li>
+              <li><button type="button" class="chip chip-btn" aria-expanded="false" aria-controls="c-decision">Decision Support Systems</button></li>
+              <li><button type="button" class="chip chip-btn" aria-expanded="false" aria-controls="c-distributed">Distributed Systems</button></li>
+              <li><button type="button" class="chip chip-btn" aria-expanded="false" aria-controls="c-optimization">Optimization in Machine Learning</button></li>
+              <li><button type="button" class="chip chip-btn" aria-expanded="false" aria-controls="c-capstone">Capstone</button></li>
+              <li><button type="button" class="chip chip-btn" aria-expanded="false" aria-controls="c-thesis">Thesis</button></li>
+            </ul>
+            <div class="course-panels">
+              <div class="course-panel" id="c-markets" hidden>
+                <h4>Markets and Competitive Strategy</h4>
+                <p>This course introduced concepts and frameworks for executing entrepreneurial business strategies in technology-based companies. The first half focused on strategy, including internal and external analysis, competitive strategies, and competitive dynamics. The second half focused on marketing, including market segmentation, product pricing and channels, and promotions. The course culminated in a marketing plan in which each group designed a comprehensive plan for a new prospective business.</p>
+              </div>
+              <div class="course-panel" id="c-accounting" hidden>
+                <h4>Accounting and Finance</h4>
+                <p>An overview of concepts in accounting and corporate finance. The first half covered the fundamentals of accounting, including financial reporting, financial statement analysis, cash flow statements, cost concepts, and working capital. The second half covered the fundamentals of finance, including valuation of stocks and bonds, project evaluation, real options, cost of capital, and hedging.</p>
+              </div>
+              <div class="course-panel" id="c-decision" hidden>
+                <h4>Decision Support Systems</h4>
+                <p>This course provided an understanding of the role of decision support systems in industry and the techniques used to implement them. It explored six primary topics in depth: information retrieval, machine learning, recommender systems, data science, natural language processing, and social network analysis.</p>
+              </div>
+              <div class="course-panel" id="c-distributed" hidden>
+                <h4>Distributed Systems</h4>
+                <p>An advanced course on the operation of distributed systems, with the opportunity to apply course concepts in a cumulative group project. Topics included time in distributed systems, failure models, mutual exclusion, election algorithms, consensus algorithms, synchronization, consistency models, replication methods, gossiping, hashing, peer-to-peer systems, and blockchain.</p>
+                <p>The group project was the most significant portion of the course and involved creating a distributed key-value cloud storage service incorporating many course concepts, including hashing, consistency, and failure handling. The code for this project can be viewed <a href="https://github.com/Pedja-Djape/Cloud-Database-ECE419" target="_blank" rel="noopener noreferrer">on GitHub</a>.</p>
+              </div>
+              <div class="course-panel" id="c-optimization" hidden>
+                <h4>Optimization in Machine Learning</h4>
+                <p>A course focused on the mathematics, algorithms, and computation behind machine learning. It covered common models for both regression and classification and the optimization processes used to train them.</p>
+              </div>
+              <div class="course-panel" id="c-capstone" hidden>
+                <h4>Capstone</h4>
+                <p>Information on my Capstone project can be found under <a href="#experience">Machine Learning Consultant at Perimeter Medical Imaging AI</a> in the Experience section.</p>
+              </div>
+              <div class="course-panel" id="c-thesis" hidden>
+                <h4>Thesis</h4>
+                <p>Information on my thesis can be found under <a href="#experience">Data Science Consultant at the Center for Management of Technology and Entrepreneurship</a> in the Experience section.</p>
+              </div>
             </div>
           </div>
-        </section>
 
-        <section id="experience">
-            <div class="section-container">
-            <h2 class="section-title">Experience</h2>
-            
-            <div class="experience-item">
-            <div class="experience-header">
-              <div>
-                <h3 class="experience-title">Data Scientist at Visa (Visa Consulting & Analytics)</h3>
-                <p class="experience-date">July 2025 - Present</p>
+          <!-- Third year -->
+          <div class="course-group" data-course-group>
+            <p class="course-label">Third Year <span class="course-years">2020–2021</span></p>
+            <ul class="chips">
+              <li><button type="button" class="chip chip-btn" aria-expanded="false" aria-controls="c-machineint">Introduction to Machine Intelligence</button></li>
+              <li><button type="button" class="chip chip-btn" aria-expanded="false" aria-controls="c-imageanalysis">Introduction to Image Analysis</button></li>
+              <li><button type="button" class="chip chip-btn" aria-expanded="false" aria-controls="c-matrix">Matrix Algebra and Optimization</button></li>
+              <li><button type="button" class="chip chip-btn" aria-expanded="false" aria-controls="c-foundations">Foundations of Computing</button></li>
+              <li><button type="button" class="chip chip-btn" aria-expanded="false" aria-controls="c-databases">Introduction to Databases</button></li>
+              <li><button type="button" class="chip chip-btn" aria-expanded="false" aria-controls="c-systems">Systems Software</button></li>
+              <li><button type="button" class="chip chip-btn" aria-expanded="false" aria-controls="c-probabilistic">Probabilistic Reasoning</button></li>
+              <li><button type="button" class="chip chip-btn" aria-expanded="false" aria-controls="c-machinelearn">Introduction to Machine Learning</button></li>
+              <li><button type="button" class="chip chip-btn" aria-expanded="false" aria-controls="c-ai">Artificial Intelligence</button></li>
+            </ul>
+            <div class="course-panels">
+              <div class="course-panel" id="c-machineint" hidden>
+                <h4>Introduction to Machine Intelligence</h4>
+                <p>An introductory course on neural networks and applying them to a variety of problems. Topics included batch normalization, loss functions and optimizers, softmax, momentum, autoencoders, and various types of neural networks (CNN, RNN, GAN).</p>
+                <p>The course also included a series of assignments and a final project (see the <a href="#projects">Projects</a> section). Assignments included binary classifiers with an MLP, image classification for sign language, and determining sentence objectivity, all of which can be found on my <a href="https://github.com/armaanlalani" target="_blank" rel="noopener noreferrer">GitHub</a>.</p>
               </div>
-              <img class="company-logo" src="./Content/visa.png" alt="Visa logo" width="100">
-            </div>
-            </div>
-            
-            <div class="experience-item">
-            <div class="experience-header">
-              <div>
-                <h3 class="experience-title">Data Scientist at Stathletes</h3>
-                <p class="experience-date">January 2025 - June 2025</p>
+              <div class="course-panel" id="c-imageanalysis" hidden>
+                <h4>Introduction to Image Analysis</h4>
+                <p>An elective focused on image manipulation and analysis, including linear filters, edge detection, keypoint detection, local descriptors, homography, and stereo vision. I worked with two peers on 3D reconstruction from 2D images, which is explained in the <a href="#projects">Projects</a> section. Assignments included object edge detection, seam carving, and optical flow between images, all of which can be found on my <a href="https://github.com/armaanlalani" target="_blank" rel="noopener noreferrer">GitHub</a>.</p>
               </div>
-              <img class="company-logo" src="./Content/stathletes.png" alt="Stathletes logo" width="100">
-            </div>
-            </div>
-            
-            <div class="experience-item">
-            <div class="experience-header">
-              <div>
-                <h3 class="experience-title">ML Research Assistant at Rotman FinHub</h3>
-                <p class="experience-date">January 2025 - May 2025</p>
+              <div class="course-panel" id="c-matrix" hidden>
+                <h4>Matrix Algebra and Optimization</h4>
+                <p>An extremely interesting course on using matrices to solve real-world problems and their application to machine intelligence. Topics included spectral decomposition, singular value decomposition (SVD), linear and quadratic programming, and convex sets and functions. Assignments applied these concepts to problems such as portfolio optimization, eigenfaces, and image compression.</p>
+                <div class="link-row">
+                  <a class="btn btn-small" href="./Content/PS1.pdf" target="_blank" rel="noopener">Problem Set 1</a>
+                  <a class="btn btn-small" href="./Content/PS2.pdf" target="_blank" rel="noopener">Problem Set 2</a>
+                  <a class="btn btn-small" href="./Content/PS3.pdf" target="_blank" rel="noopener">Problem Set 3</a>
+                  <a class="btn btn-small" href="./Content/PS4.pdf" target="_blank" rel="noopener">Problem Set 4</a>
+                  <a class="btn btn-small" href="./Content/PS5.pdf" target="_blank" rel="noopener">Problem Set 5</a>
+                  <a class="btn btn-small" href="./Content/PS6.pdf" target="_blank" rel="noopener">Problem Set 6</a>
+                </div>
               </div>
-              <img class="company-logo" src="./Content/rotman.png" alt="Rotman logo" width="100">
-            </div>
-            </div>
-            
-            <div class="experience-item">
-            <div class="experience-header">
-              <div>
-                <h3 class="experience-title">Data Scientist at Overbond</h3>
-                <p class="experience-date">February 2023 - July 2024</p>
+              <div class="course-panel" id="c-foundations" hidden>
+                <h4>Foundations of Computing</h4>
+                <p>A course that built on first-year Data Structures and Algorithms, covering sorting algorithms, graph theory, hash tables, splay trees, greedy algorithms, dynamic programming, amortized analysis, maximum flow, automata theory, and NP-completeness.</p>
               </div>
-              <img class="company-logo" src="./Content/overbond.jpeg" alt="Overbond logo" width="100">
-            </div>
-            <div class="experience-content">
-            <span id="more_ob">
-              <p class="experience-description">I started working part time at Overbond during the final two months of my undergraduate degree and transitioned to a full time role in May 2023. As a Data Scientist, I was involved in two major projects: Smart Order Routing (SOR) and Layer2 Bond Pricing.</p>
-              <p class="experience-description">I was the lead owner and developer of the new SOR product part of Overbond's suite. The goal of SOR is to provide algorithmic and aggregated fixed income trading routes in order to minimize transaction costs. Fixed income trading typically involves four major trading venues: Over the Counter (OTC), Request for Quote (RFQ), All to All, and Direct Channels. Typically, traders are required to check various venues and channels in order to find the best path to execution, an issue that SOR aims to solve. OTC and RFQ prices are predicted using trained machine learning models along with associated quantities using developed dealer inventory and market capacity analytics using Transaction Cost Analysis (TCA). After gathering associated prices, venues, and available dealers, a linear program aims to solve the best path to execution using the available sources.</p>
-              <p class="experience-description">I was also a developer for Overbond's Layer2 Bond Pricing Model. The goal of Layer2 is to provide live RFQ pricing analytics for clients in order to minimize transaction costs while also winning the RFQ auction. The Layer2 model is a boosting algorithm that utilizes decision trees to generate predicted prices for bonds using bond level analytics, issuer level analytics, and sector level analytics. As a developer, I was responsible for conducting backtests for clients, which involved training individual models for clients using their historical RFQ data. I was responsible for all stages in the data pipeline: exploratory data analytsis, data cleansing, model training, model output analysis, and presentation of results.</p>
-            </span>
-              <button onclick="myFunction_ob()" id="moreBtn_ob" class="read-more-btn">Read More</button>
-            </div>
-            </div>
-            
-            <div class="experience-item">
-            <div class="experience-header">
-              <div>
-                <h3 class="experience-title">Data Science Consultant at Center for Management of Technology and Entrepreneurship</h3>
-                <p class="experience-date">September 2022 - April 2023</p>
+              <div class="course-panel" id="c-databases" hidden>
+                <h4>Introduction to Databases</h4>
+                <p>An introduction to relational algebra and database queries in SQL. The first half covered relational schemas, operators, sets, constraints, and keys. The SQL portion covered selects, the various forms of join, and unions and intersections. The course also introduced design theory algorithms, including the closure algorithm, 3NF synthesis, and the chase test.</p>
               </div>
-              <img class="company-logo" src="./Content/cmte.png" alt="CMTE logo" width="100">
-            </div>
-            <div class="experience-content">
-            <span id="more_th">
-              <p class="experience-description">My fourth year thesis was completed at U of T's Center for Management of Technology and Entrepreneurship at a financial institution (The Bank), which cannot be disclosed due to an NDA. The rise of deepfake technology in recent years has underscored the importance of distinguishing between authentic and synthetic content. For established financial institutions such as The Bank, ensuring security and confidentiality for clients and themselves is a top priority. However, voiceprint technology, which relies on vocal features to authenticate clients over the phone, is vulnerable to synthesized speech. The Bank acknowledges the potential risks posed by synthetic speech and recognizes the need to identify effective mitigation techniques to safeguard security. To this end, the present study aims to compare the performance of handcrafted and deep feature-based methods of synthetic speech detection across several key evaluation metrics, including accuracy, equal error rate, processing time, and trainable parameters. Two models were developed and tested, and the results indicate that the deep features model outperforms the handcrafted features model on three of the four metrics, suggesting that it should be prioritized for implementation. Click the link below to view my final thesis report.</p>
-              <div id="pid">
-                <button class="course-button" onclick="window.open('./Content/Thesis.pdf')">Thesis Report</button>
+              <div class="course-panel" id="c-systems" hidden>
+                <h4>Systems Software</h4>
+                <p>A course on the components of operating systems, combining a strong theoretical foundation with labs completed in C. Topics included virtualization, I/O devices, interrupts, trap instructions, threads and their API, mutual exclusion, synchronization, scheduling policies, Unix processes, memory management, and disks and file systems. The course labs can be found on my <a href="https://github.com/armaanlalani" target="_blank" rel="noopener noreferrer">GitHub</a>.</p>
               </div>
-            </span>
-              <button onclick="myFunction_th()" id="moreBtn_th" class="read-more-btn">Read More</button>
-            </div>
-            </div>
-            
-            <div class="experience-item">
-            <div class="experience-header">
-              <div>
-                <h3 class="experience-title">Machine Learning Consultant at Perimeter Medical Imaging AI</h3>
-                <p class="experience-date">September 2022 - December 2022</p>
+              <div class="course-panel" id="c-probabilistic" hidden>
+                <h4>Probabilistic Reasoning</h4>
+                <p>An essential course for machine learning and artificial intelligence, building from introductory probability to more advanced concepts and algorithms, including maximum likelihood estimation, Bayesian hypothesis testing, linear and quadratic discriminant analysis, Bayesian inference, Markov chains, Bayesian networks, Markov random fields, and hidden Markov models (forward-backward and Viterbi algorithms). The three Python labs can be <a href="https://github.com/armaanlalani/Probability" target="_blank" rel="noopener noreferrer">viewed on my GitHub</a>.</p>
               </div>
-              <img class="company-logo" src="./Content/perimeter.jpeg" alt="Perimeter Medical logo" width="100">
-            </div>
-            <div class="experience-content">
-            <span id="more_pm">
-              <p class="experience-description">My fourth year Engineering Capstone project was completed in collaboration with Perimeter Medical Imaging. Perimeter is an AI company that uses deep learning models to help surgeons determine whether cancer tissue is successfully remove during breast conserving surgery. The primary problem presented by PerimeterMed was the timeframe required to conduct a margin assessment. The margin assessment is a process used to determine whether or not the surgeon was successful in removing the tumor during BCS utilizing OCT images. Conducting an accurate margin assessment requires the use of denoised OCT images, which was accomplished by using two signals to reduce noise, taking approximately two to three minutes. This timeframe was problematic for two primary reasons: the first being a reduction of throughput in the number of patients a surgeon is able to see and the second being potentially keeping patients under unnecessary sedation during the margin assessment if the assessment reveals no malignant tissue. As a result, the solution to this problem involved the use of a deep learning model to reduce the levels of noise in individual signals, thus reducing the total amount of time needed to conduct a margin assessment. The link to the report for our Capstone project can be found below.</p>
-              <div id="pid">
-                <button class="course-button" onclick="window.open('./Content/Capstone.pdf')">Capstone Report</button>
+              <div class="course-panel" id="c-machinelearn" hidden>
+                <h4>Introduction to Machine Learning</h4>
+                <p>A course that built on Introduction to Machine Intelligence, covering linear regression, logistic regression, gradient descent, the mathematics of neural networks and backpropagation, clustering, density estimation, Gaussian mixture models, expectation maximization, support vector machines, and PAC learning. The programming assignments can be viewed on my GitHub: <a href="https://github.com/armaanlalani/Logistic-Regression" target="_blank" rel="noopener noreferrer">logistic regression</a>, <a href="https://github.com/armaanlalani/Neural-Networks" target="_blank" rel="noopener noreferrer">neural networks</a>, and <a href="https://github.com/armaanlalani/Unsupervised-Learning" target="_blank" rel="noopener noreferrer">unsupervised learning</a>.</p>
               </div>
-            </span>
-              <button onclick="myFunction_pm()" id="moreBtn_pm" class="read-more-btn">Read More</button>
-            </div>
-            </div>
-            
-            <div class="experience-item">
-            <div class="experience-header">
-              <div>
-                <h3 class="experience-title">CMG Investment Co-op for Total Fund Completion Portfolio Strategies (Quant) at OPTrust</h3>
-                <p class="experience-date">May 2021 - July 2022</p>
+              <div class="course-panel" id="c-ai" hidden>
+                <h4>Artificial Intelligence</h4>
+                <p>A very interesting course on artificial intelligence and agent-based problems. Topics included search algorithms (breadth-first, depth-first), the A* algorithm and heuristics, Boolean algebra and propositional logic, inference, constraint satisfaction problems, state-space search, random trees, game theory, minimax search, decision trees, Markov decision processes, dynamic programming, and reinforcement learning. The Python assignments can be <a href="https://github.com/armaanlalani/AI-Assignments" target="_blank" rel="noopener noreferrer">viewed on my GitHub</a>.</p>
               </div>
-              <img class="company-logo" src="./Content/optrust.jpeg" alt="OPTrust logo" width="100">
             </div>
-            <div class="experience-content">
-            <span id="more_op">
-              <p class="experience-description">I had the tremendous opportunity to work at OPTrust during my Professional Experience Year (PEY) as a CMG Investment Co-op on the TFCPS team. My role and team was heavily focused on making strong data driven investment decisions using a variety of techniques from the fields of data science and machine learning. A few of my most meaningful projects included building an equity regime detection model, a bootstrapping model to analyze the performance of various risk mitigants against the S&P, and a neural network to predict the price of movements of various future rolls.</p>
-              <p class="experience-description">The equity regime detection model consisted of two parts: the first was utilizing L1 trend filtering to numerically identify historical periods of growth and decline in equity and secondly, training a random forest model of several macroeconomic indicators to predict regime switches. The model performed well out of sample, and was able to predict the switch of regimes during the Global Financial Crisis as well as COVID. The model will continue to be used in production for Severe Market Decline and Systematic Risk Allocation. The bootstrapping model I built was used to test the effectiveness of various risk mitigating strategies against the S&P. The model samples historical returns to create a simulated path environment for a specified amount of time. It then introduces a risk mitigant (gold, bonds, currencies, etc.) or a particular strategy (trend, options, etc.) to attempt to reduce the VAR95 of the original portfolio by a certain percentage. This model is now currently being used by the investment division to test the effectiveness of various strategies. Lastly, I also built a convolutional neural network to predict price movements of futures rolls. I was responsible for creating the entire data pipeline, consisting of extracting the appropriate roll tickers based on the roll schedule, querying Bloomberg for price, volume, open interest, and commitment of trader's data, and performing data preprocessing to ensure it could be passed through a model. The model did not perform as well as expected, however, the project provided me with important information regarding the process of rolling futures and the various capabilities offered by the Bloomberg terminal.</p>
-              <p class="experience-description">Finally, I also worked on a number of reporting projects during my time at OPTrust. Some of these included generating and sending out reports daily on FX Exposure and P&L, analyzing model slippage of Risk Reduced Equities using intraday data, and generating reporting emails for various fund portfolios.</p>
-            </span>
-              <button onclick="myFunction_op()" id="moreBtn_op" class="read-more-btn">Read More</button>
-            </div>
-            </div>
-            
-            <div class="experience-item">
-            <div class="experience-header">
-              <div>
-                <h3 class="experience-title">Project Developer at University of Toronto Machine Intelligence Student Team (UTMIST)</h3>
-                <p class="experience-date">July 2020 - May 2022</p>
-              </div>
-              <img class="company-logo" src="./Content/utmist.png" alt="UTMIST logo" width="100">
-            </div>
-            <div class="experience-content">
-            <span id="more_ut">
-              <p class="experience-description">During the 2021-2022 academic year, I worked as a Project Developer for UTMIST. The project my team and I worked on was developing an image to text converter in Python and I was specifically tasked with implementing the sentence to word segmentation feature. By utilizing the IAM Dataset, I was able to generate a dataloader class which consisted of various examples of handwritten lines along with the bounding boxes associated with each individual word. By utilizing resnet architecture, I was able to reconstruct an existing model to train. During the training process, the model was not able to converge to locating the ground truth bounding boxes, and as a result, we proceeded to use a pretrained model. The pretrained model was able to locate the bounding boxes accurately on the dataloader class that was built and was used in the final pipeline. For more information visit the <a href="https://utmist.gitlab.io/" target="_blank">UTMIST website</a>.</p>
-            </span>
-              <button onclick="myFunction_ut()" id="moreBtn_ut" class="read-more-btn">Read More</button>
-            </div>
-            </div>
-            
-            <div class="experience-item">
-            <div class="experience-header">
-              <div>
-                <h3 class="experience-title">IT Analyst at Coreio Inc and Manulife - North American Service Desk</h3>
-                <p class="experience-date">March 2020 - June 2020</p>
-              </div>
-              <img class="company-logo" src="./Content/manulife.jpeg" alt="Manulife logo" width="100">
-            </div>
-            <div class="experience-content">
-            <span id="more_cor">
-              <p class="experience-description">My experience as an information technology support analyst at Coreio entailed providing quality support to Manulife employees with various issues they may have faced including: system access, application access, and connectivity issues. The position would often require me to remote into employee's computers due to COVID-19 and troubleshoot from my laptop to assist the user with issues regarding Manulife account access, mainframe access, VPN connectivity, and dual monitor setup. This opportunity enhanced my skills in:</p>
-              <ul class="listup">
-                <li class="list"><h5 class="experience-title" style="font-size: 1.1rem; margin-bottom: 0.5rem;">Problem Analysis</h5>Issues brought forth by employees can often be complicated with various steps and taught me the importance of devising a strategy to solve them based on previous calls and information</li>
-                <li class="list"><h5 class="experience-title" style="font-size: 1.1rem; margin-bottom: 0.5rem;">Quality Assurance</h5>Employees could sometimes be frustrated if they experienced the same technical issues continuously and often required very thorough support in order to minimize the chance of future problems</li>
-                <li class="list"><h5 class="experience-title" style="font-size: 1.1rem; margin-bottom: 0.5rem;">Collaboration</h5>Many Coreio employees were new to assisting Manulife employees and demanded a high level of communication and collaboration within the team in order to provide support</li>
-              </ul>
-            </span>
-              <button onclick="myFunction_cor()" id="moreBtn_cor" class="read-more-btn">Read More</button>
-            </div>
-            </div>
-            
-            <div class="experience-item">
-            <div class="experience-header">
-              <div>
-                <h3 class="experience-title">Business Architecture Intern at TD Bank</h3>
-                <p class="experience-date">April 2019 - August 2019</p>
-              </div>
-              <img class="company-logo" src="./Content/td.png" alt="TD Bank logo" width="100">
-            </div>
-            <div class="experience-content">
-            <span id="more_td">
-              <p class="experience-description">My experience as a Business Architecture Intern for the North American Contact Centre (NACC) for TD Bank entailed developing a detailed roadmap for capabilities related to call centre agents, the TD app and website, and TD Clari. I had the opportunity to develop an active database of the current capabilities being developed as well as information relating to projects expected to be undertaken in the future. Additionally, I focused in on application alerts and performed a thorough current state analysis, future state analysis, and roadmap which was then presented to various vice presidents of NACC. Lastly, I also had the opportunity to work within a group of interns to devise improvements to the intern experience which was presented to TD's talent acquisition team. This opportunity enhanced my skills in:</p>
-              <ul class="listup">
-                <li class="list"><h5 class="experience-title" style="font-size: 1.1rem; margin-bottom: 0.5rem;">Data Analysis</h5>A very large part of the position involved analyzing data related to customer agent interactions and making informed decisions based on conclusions drawn from the data</li>
-                <li class="list"><h5 class="experience-title" style="font-size: 1.1rem; margin-bottom: 0.5rem;">Presentation Delivery</h5>This position entailed a number of small and large scale projects which were later presented to senior management for approval and feedback</li>
-              </ul>
-            </span>
-              <button onclick="myFunction_td()" id="moreBtn_td" class="read-more-btn">Read More</button>
-            </div>
-            </div>
-            </div>
-        </section>
-        <section id="education">
-            <div class="section-container">
-            <h2 class="section-title">Education</h2>
-            <p class="section-intro">The MMA Program at Rotman is recognized by the Vector Institute of AI for delivering a curriculum that equips graduates with skills required to succeed in AI related roles. I pursued the MMA program to enhance the AI and ML experience I gained as an Engineering Science graduate and employment experience.</p>
-            
-            <div class="education-item">
-            <h3 class="education-degree">Master of Management Analytics</h3>
-            <p class="education-date">August 2024 - July 2025</p>
-            <div class="course-grid">
-              <button class="course-button">Leveraging AI and Deep Learning Tools in Marketing</button>
-              <button class="course-button">Analytical Methods in Finance</button>
-              <button class="course-button">Service Analytics for Management Analytics</button>
-              <button class="course-button">Optimizing Supply Chain Management and Logistics</button>
-              <button class="course-button">Machine Learning Analytics</button>
-              <button class="course-button">Structuing and Visualizing Data for Analytics</button>
-            </div>
-            </div>
-            
-            <div class="education-item">
-            <h3 class="education-degree">Engineering Science - Machine Intelligence Fourth Year</h3>
-            <p class="education-date">September 2022 - April 2023</p>
-            <div class="course-list">
-                <div class="course-detail">
-                    <button class="course-button" onclick="toggleCourse('markets')">Markets and Competitive Strategy</button>
-                    <div id="markets" class="course-content">
-                        <p class="course-description">This course introduced concepts and frameworks relating to executing entrepreneurial business strategies in technology-based companies. The first half of the course focused on strategy and included concepts such as internal/external analysis, competitive strategies, and competitive dynamics. The second half of the course focused on marketing and included concepts such as market segmentation, product pricing and channels, promotions, etc. The course also consisted of a summative marketing plan in which each group was tasked with designing a comprehensive marketing plan for a new prospective business.</p>
-                    </div>
-                </div>
-                <div class="course-detail">
-                    <button class="course-button" onclick="toggleCourse('accounting')">Accounting and Finance</button>
-                    <div id="accounting" class="course-content">
-                        <p class="course-description">This course provided an overview of concepts in accounting and corporate finance. The first half of the course focused on the fundamentals of accounting which included concepts such as financial reporting, financial statement analysis, cash flow statements, cost concepts, working capital, etc. The second half of the course focused on the fundamentals of finance and included concepts such as valuation of stocks and bonds, project evaluation, real options, cost of capital, hedging, etc.</p>
-                    </div>
-                </div>
-                <div class="course-detail">
-                    <button class="course-button" onclick="toggleCourse('decision')">Decision Support Systems</button>
-                    <div id="decision" class="course-content">
-                        <p class="course-description">This couse provided an understanding on the role of decision support systems in industry and the various techniques used to implement them. The course consisted of 6 primary topics which were explored in depth including information retrieval, machine learning, recommender systems, data science, natural language processing, and social network analysis.</p>
-                    </div>
-                </div>
-                <div class="course-detail">
-                    <button class="course-button" onclick="toggleCourse('distributed')">Distributed Systems</button>
-                    <div id="distributed" class="course-content">
-                        <p class="course-description">An advanced course that provided an understanding on the operations of distributed systems as well as the opportunity to apply course concepts in a cumulative group project. Course concepts included time in distribute systems, failure models, mutual exclusion, election algorithms, consensus algorithms, synchronization, consistency models, replication methods, gossiping, hashing, peer-to-peer systems, and blockchain.</p>
-                        <p class="course-description">The group project was the most significant portion of the course and involved creating a distributed key-value cloud storage service that incorporated many of the course concepts including hashing, consistency, failure methods, etc. The developed code for this project can be viewed <a href="https://github.com/Pedja-Djape/Cloud-Database-ECE419" target="_blank">here</a>.</p>
-                    </div>
-                </div>
-                <div class="course-detail">
-                    <button class="course-button" onclick="toggleCourse('optimization')">Optimization in Machine Learning</button>
-                    <div id="optimization" class="course-content">
-                        <p class="course-description">A course that focused on the role of machine learning relating to mathematics, algorithms, and computation. The course covered common machine learning models for both regression and classification and the optimization processes for training these models.</p>
-                    </div>
-                </div>
-                <div class="course-detail">
-                    <button class="course-button" onclick="toggleCourse('capstone')">Capstone</button>
-                    <div id="capstone" class="course-content">
-                        <p class="course-description">Information on my capstone project can be found in 'Machine Learning Consultant at Perimeter Medical Imaging AI' in the Experience Section.</p>
-                    </div>
-                </div>
-                <div class="course-detail">
-                    <button class="course-button" onclick="toggleCourse('thesis')">Thesis</button>
-                    <div id="thesis" class="course-content">
-                        <p class="course-description">Information on my thesis can be found in 'Data Science Consultant at Center for Management of Technology and Entrepreneurship' in the Experience Section.</p>
-                    </div>
-                </div>
-            </div>
-            </div>
-            
-            <div class="education-item">
-            <h3 class="education-degree">Engineering Science - Machine Intelligence Third Year</h3>
-            <p class="education-date">September 2020 - April 2021</p>
-            <div class="course-list">
-                <div class="course-detail">
-                    <button class="course-button" onclick="toggleCourse('machineint')">Introduction to Machine Intelligence</button>
-                    <div id="machineint" class="course-content">
-                        <p class="course-description">An introductory course on neural networks and applying them to various problems. Course content covered topics such as batch normalization, types of loss functions and optimizers, softmax, momentum, autoencoders, and various types of neural networks (CNN, RNN, GAN).</p>
-                        <p class="course-description">The course also provided the opportunity to apply these concepts to a series of assignments and a final project (more information in projects section). Course assignments included binary classifiers with an MLP, image classification for sign language, and determining sentence objectivity, all of which can be found on my Github.</p>
-                    </div>
-                </div>
-                <div class="course-detail">
-                    <button class="course-button" onclick="toggleCourse('imageanalysis')">Introduction to Image Analysis</button>
-                    <div id="imageanalysis" class="course-content">
-                        <p class="course-description">An elective course that focused on a variety of concepts relating to image manipulation and analysis including linear filters, edge detection, keypoint detection, local descriptors, homography, stereo vision, and several others. The course provided me with the opportunity to work on a project with two other peers on 3D reconstruction from various 2D images, which is explained in depth in the project section. I also had the opportunity to work on various assignments that allowed me to apply course concepts including object edge detection, seam carving of images, optical flow between images, and several others all of which can be found on my Github.</p>
-                    </div>
-                </div>
-                <div class="course-detail">
-                    <button class="course-button" onclick="toggleCourse('matrix')">Matrix Algebra and Optimization</button>
-                    <div id="matrix" class="course-content">
-                        <p class="course-description">An extremely interesting course on the uses of matrices for a variety of real-world problems and their application to Machine Intelligence. Course concepts included spectral decomposition, SVD (singular value decomposition), linear and quadratic programming, convex sets and functions, and several others. The course provided me with the opportunity to apply these concepts to a variety of intriguing assignments dealing with problems such as portfolio optimization, eigenfaces, image compression, and various others. Click on the links below to learn more about these projects.</p>
-                        <p class="course-description"><a href="PS1.pdf" download target="_blank">Problem Set 1, </a><a href="PS2.pdf" download target="_blank">Problem Set 2, </a><a href="PS3.pdf" download target="_blank">Problem Set 3, </a><a href="PS4.pdf" download target="_blank">Problem Set 4, </a><a href="PS5.pdf" download target="_blank">Problem Set 5, </a><a href="PS6.pdf" download target="_blank">and Problem Set 6.</a></p>
-                    </div>
-                </div>
-                <div class="course-detail">
-                    <button class="course-button" onclick="toggleCourse('foundations')">Foundations of Computing</button>
-                    <div id="foundations" class="course-content">
-                        <p class="course-description">A course that built on various concepts from the Data Structures and Algorithms course taught during first year. The course went into depth on a number of concepts including various sorting algorithms, graph theory, hash tables, splay trees, greedy algorithms, dynamic programming, ammortized analysis, maximum flow, theory of automata, NP completeness, and various others.</p>
-                    </div>
-                </div>
-                <div class="course-detail">
-                    <button class="course-button" onclick="toggleCourse('databases')">Introduction to Databases</button>
-                    <div id="databases" class="course-content">
-                        <p class="course-description">A courses that focused on both an introduction to relational algebra and database queries in SQL. Topics in the first half of the course included relationship schemas, various operators, sets, constraints, and keys. The SQL portion of the course focused on operators such as selects, various forms of join, and union/intersections. The course also provided an introduction to a number of design theory algorithms including the closure algorithm, 3NF synthesis, and the chase test.</p>
-                    </div>
-                </div>
-                <div class="course-detail">
-                    <button class="course-button" onclick="toggleCourse('systems')">Systems Software</button>
-                    <div id="systems" class="course-content">
-                        <p class="course-description">A course that focused on the various components to Operating Systems. The course had a very strong knowledge aspect as well as application in the form of labs completed in C. Some primary course concepts included virtualization, i/o devices, interrupts, trap instructions, threads and their API, mutual exclusion, synchronization, scheduling policies, unix processes, memory management, and disks and file systems. Visit my Github to see the implementation of these concepts through the course labs.</p>
-                    </div>
-                </div>
-                <div class="course-detail">
-                    <button class="course-button" onclick="toggleCourse('probabilistic')">Probabilistic Reasoning</button>
-                    <div id="probabilistic" class="course-content">
-                        <p class="course-description">An essential course for the field of Machine Learning and Artificial Intelligence. The course began with introductory concepts to probability which was built on with more advanced concepts and algorithms. Some of these concepts included maximum likelihood estimation, Bayesian hypothesis testing, linear and quadratic discriminant analysis, bayesian inference, Markov chains, Bayesian nets, Markov random fields, and hidden Markov models (forward-backward and Viterbi algorithms). The course also consisted of three labs completed in Python which enforced these concepts which can be <a href="https://github.com/armaanlalani/Probability" target="_blank">viewed on my Github</a>.</p>
-                    </div>
-                </div>
-                <div class="course-detail">
-                    <button class="course-button" onclick="toggleCourse('machinelearn')">Introduction to Machine Learning</button>
-                    <div id="machinelearn" class="course-content">
-                        <p class="course-description">A course that developed a number of concepts covered in Introduction to Machine Intelligence. Some of these concepts included linear regression, logistic regression, gradient descent, the mathematical interpretation of neural networks and backpropagation, clustering, density estimation, Gaussian mixture models, expectation maximization, support vector machines, and PAC learning. The courses also consisted of programming assignments where these concepts were applied, which can be viewed on my Github (<a href="https://github.com/armaanlalani/Logistic-Regression" target="_blank">logistic regression</a>, <a href="https://github.com/armaanlalani/Neural-Networks" target="_blank">neural networks</a>, <a href="https://github.com/armaanlalani/Unsupervised-Learning" target="_blank">unsupervised learning)</a>.</p>
-                    </div>
-                </div>
-                <div class="course-detail">
-                    <button class="course-button" onclick="toggleCourse('ai')">Artificial Intelligence</button>
-                    <div id="ai" class="course-content">
-                        <p class="course-description">A very interesting course that discussed various concepts relating to artificial intelligence and agent-based problems. Course concepts consisted of various search algorithms (breadth, depth), A* algorithm and heuristics, Boolean algebra and propositional logic, inference, constraint satisfiability problems, state-space search, random trees, game theory, min-max search, decision trees, Markov decision processes, dynamic programming, and reinforcement learning. The course also consisted of coding assignments in Python where these concepts were applied which can be <a href="https://github.com/armaanlalani/AI-Assignments" target="_blank">viewed on my Github</a>.</p>
-                    </div>
-                </div>
-            </div>
-            </div>
-            
-            <div class="education-item">
-            <h3 class="education-degree">Engineering Science - First and Second Year</h3>
-            <p class="education-date">September 2018 - April 2020</p>
-            <div class="course-list">
-                <div class="course-detail">
-                    <button class="course-button" onclick="toggleCourse('datastructures')">Data Structures and Algorithms</button>
-                    <div id="datastructures" class="course-content">
-                        <p class="course-description">An introduction to data structures and algorithms using both Python and C to create stacks, queues, binary search trees, trees, hash tables, graphs, etc. A few larger scale projects as well including:</p>
-                        <ul>
-                            <li><a href="https://github.com/armaanlalani/chessAI" target="_blank">AI for Chess using Python</a></li>
-                            <li><a href="https://github.com/armaanlalani/BurgerPDE" target="_blank">Burger PDE</a></li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="course-detail">
-                    <button class="course-button" onclick="toggleCourse('calculus')">Calculus I and II</button>
-                    <div id="calculus" class="course-content">
-                        <p class="course-description">A variety of advanced calculus concepts including delta-epsilon limit proofs, inverse functions, integration techniques (partial fractions, trig substitution), partial derivaties, etc.</p>
-                    </div>
-                </div>
-                <div class="course-detail">
-                    <button class="course-button" onclick="toggleCourse('praxis12')">Praxis I and II</button>
-                    <div id="praxis12" class="course-content">
-                        <p class="course-description">Two courses that provide a strong foundation in engineering design. The first course focuses mainly on the theory behind engineering design such as the process of diverging, converging, effective methods of idea generation, leadership styles, and targeting various aspects of design. Completed the course by designing a prototype of a wearable pencil case to assist students working while commuting to school.</p>
-                        <p class="course-description">The second course focused on applying the concepts taught during the first course. I had the opportunity to collaborate with three other students to design a mechanism or process to assist a local badminton club in collecting shuttlecocks after drills. This project consisted of applying various concepts taught earlier in the year through various brainstroming methods and utilizing comparison matrices and SCAMPER tools in order to converge towards an idea. We also had the opportunity to test our prototype at the badminton club to verify our solution and presented our innovative ideas at the annual University of Toronto's Praxis Showcase.</p>
-                        <img src="./Content/praxis2.JPG" width="250px">
-                        <img src="./Content/praxis3.JPG" width="250px">
-                        <img src="./Content/praxis1.PNG" width="250px">
-                    </div>
-                </div>
-                <div class="course-detail">
-                    <button class="course-button" onclick="toggleCourse('linear')">Linear Algebra</button>
-                    <div id="linear" class="course-content">
-                        <p class="course-description">A course with a very strong emphasis on formal proofs related to topics such as vector spaces, span, linear dependency, differential equations, etc.</p>
-                    </div>
-                </div>
-                <div class="course-detail">
-                    <button class="course-button" onclick="toggleCourse('ode')">Ordinary Differential Equations</button>
-                    <div id="ode" class="course-content">
-                        <p class="course-description">A course with a focus on solving ordinary differential equations using a variety of methods depending on the question presented. Some concepts taught included: method of integrating factors, the existence uniqueness theorem, systems of linear differential equations, stability of equilibrium points, fundamental matrices, nonhomogeneous linear systems, Laplace transforms, and convolution integrals. The course also had a strong focus on applying these concepts using MATLAB which can be found by <a href="https://github.com/armaanlalani/Ordinary-Differential-Equations_MATLAB" target="_blank">clicking on this link</a>.</p>
-                    </div>
-                </div>
-                <div class="course-detail">
-                    <button class="course-button" onclick="toggleCourse('probability')">Probability and Statistics</button>
-                    <div id="probability" class="course-content">
-                        <p class="course-description">An introduction to various concepts relating to probability and statistics. Course concepts include: conditional probability, Baye's Rule, probability functions, cumulative distribution functions, joint probability distribution, covariance, binomial distribution, hypergeometric distribution, normal distribution, exponential distribution, transformation of variables, moment generating functions, t-distribution, interval estimates, Cramer Rao lower bounds, and one and two sample tests of hypotheses.</p>
-                    </div>
-                </div>
-                <div class="course-detail">
-                    <button class="course-button" onclick="toggleCourse('praxis3')">Praxis III</button>
-                    <div id="praxis3" class="course-content">
-                        <p class="course-description">Praxis III is probably one of the most important and interesting courses I have taken so far in my undergraduate degree. The basis of the course involved designing an autonomous mechanism that was able to deliver electric chargers to cars located in a parking lot. This task was to be completed in teams of three and could be tackled in any which way as long as a number of restraints were followed. Prior to engaging in the project, my team and I had to complete a number of workshops on topics in rover fabrication, digital modelling, circuits and microcontrollers, motors and drivers, and interfacing. <a href="#projects">Visit the projects section of the page</a> to learn more about my team's solution or <a href="praxisIII.pdf" download target="_blank">download the challenge rules</a> to learn more.</p>
-                        <p class="course-description">Due to the COVID-19 outbreak, this project was not completed due to lack of access to building and testing facilities. As a result, I completed an individual project around the concept of PID control using MATLAB. PID control is an essential concept relating to robotics to ensure any robot with wheels is able to travel as straight as possible when required. I was able to successfully implement PID control to the motion of simulated robot while also incorporating compass control which had a very significant impact on the robot's motion. Run the main_script.m file accessible through <a href="https://github.com/armaanlalani/PID_Controller" target="_blank">this link</a> to view the robot simulation and <a href="3.1_Armaan Lalani_Closed-Loop Controller.pdf" download target="_blank">click on this link</a> to view my report which explains the various decisions I made.</p>
-                    </div>
-                </div>
-            </div>
-            </div>
-            </div>
-        </section>
-        
-        <section id="projects">
-            <div class="section-container">
-            <h2 class="section-title">Projects</h2>
+          </div>
 
-            <div class="project-item">
-            <h3 class="project-title">Generative AI Fundamentals Professional Certificate</h3>
-            <p class="project-date">Winter 2025</p>
-            <div class="project-content">
-            <span id="more_gai">
-              <p class="project-description">Courses include: Agile with AI, Beginning Llamafile, End to End LLM with Azure, Small Language Models, Using GenAI to Automate Software Development Tasks, and Introduction to LLM Vulnerabilities.</p>
-            </span>
-              <button onclick="myFunction_gai()" id="moreBtn_gai" class="read-more-btn">Read More</button>
+          <!-- First and second year -->
+          <div class="course-group" data-course-group>
+            <p class="course-label">First &amp; Second Year <span class="course-years">2018–2020</span></p>
+            <ul class="chips">
+              <li><button type="button" class="chip chip-btn" aria-expanded="false" aria-controls="c-datastructures">Data Structures and Algorithms</button></li>
+              <li><button type="button" class="chip chip-btn" aria-expanded="false" aria-controls="c-calculus">Calculus I and II</button></li>
+              <li><button type="button" class="chip chip-btn" aria-expanded="false" aria-controls="c-praxis12">Praxis I and II</button></li>
+              <li><button type="button" class="chip chip-btn" aria-expanded="false" aria-controls="c-linear">Linear Algebra</button></li>
+              <li><button type="button" class="chip chip-btn" aria-expanded="false" aria-controls="c-ode">Ordinary Differential Equations</button></li>
+              <li><button type="button" class="chip chip-btn" aria-expanded="false" aria-controls="c-probability">Probability and Statistics</button></li>
+              <li><button type="button" class="chip chip-btn" aria-expanded="false" aria-controls="c-praxis3">Praxis III</button></li>
+            </ul>
+            <div class="course-panels">
+              <div class="course-panel" id="c-datastructures" hidden>
+                <h4>Data Structures and Algorithms</h4>
+                <p>An introduction to data structures and algorithms, using both Python and C to build stacks, queues, binary search trees, hash tables, and graphs. The course also included a few larger projects:</p>
+                <div class="link-row">
+                  <a class="btn btn-small" href="https://github.com/armaanlalani/chessAI" target="_blank" rel="noopener noreferrer"><i class="fab fa-github" aria-hidden="true"></i> AI for Chess in Python</a>
+                  <a class="btn btn-small" href="https://github.com/armaanlalani/BurgerPDE" target="_blank" rel="noopener noreferrer"><i class="fab fa-github" aria-hidden="true"></i> Burgers' PDE</a>
+                </div>
+              </div>
+              <div class="course-panel" id="c-calculus" hidden>
+                <h4>Calculus I and II</h4>
+                <p>A variety of advanced calculus concepts, including delta-epsilon limit proofs, inverse functions, integration techniques (partial fractions, trigonometric substitution), and partial derivatives.</p>
+              </div>
+              <div class="course-panel" id="c-praxis12" hidden>
+                <h4>Praxis I and II</h4>
+                <p>Two courses that provide a strong foundation in engineering design. The first focused on the theory behind engineering design: diverging and converging, effective idea generation, leadership styles, and targeting various aspects of design. I completed it by designing a prototype of a wearable pencil case to help students work while commuting to school.</p>
+                <p>The second course focused on applying those concepts. I collaborated with three other students to design a mechanism to help a local badminton club collect shuttlecocks after drills, using brainstorming methods, comparison matrices, and SCAMPER tools to converge on an idea. We tested our prototype at the club to verify the solution and presented it at the University of Toronto's annual Praxis Showcase.</p>
+                <div class="gallery">
+                  <img src="./Content/praxis2.JPG" alt="Praxis II shuttlecock collector prototype" loading="lazy">
+                  <img src="./Content/praxis3.JPG" alt="Praxis II prototype being tested" loading="lazy">
+                  <img src="./Content/praxis1.PNG" alt="Praxis II design drawing" loading="lazy">
+                </div>
+              </div>
+              <div class="course-panel" id="c-linear" hidden>
+                <h4>Linear Algebra</h4>
+                <p>A course with a strong emphasis on formal proofs related to vector spaces, span, linear dependence, and differential equations.</p>
+              </div>
+              <div class="course-panel" id="c-ode" hidden>
+                <h4>Ordinary Differential Equations</h4>
+                <p>A course focused on solving ordinary differential equations with a variety of methods, including integrating factors, the existence and uniqueness theorem, systems of linear differential equations, stability of equilibrium points, fundamental matrices, nonhomogeneous linear systems, Laplace transforms, and convolution integrals. The course had a strong focus on applying these concepts in MATLAB, which can be found <a href="https://github.com/armaanlalani/Ordinary-Differential-Equations_MATLAB" target="_blank" rel="noopener noreferrer">on my GitHub</a>.</p>
+              </div>
+              <div class="course-panel" id="c-probability" hidden>
+                <h4>Probability and Statistics</h4>
+                <p>An introduction to probability and statistics, covering conditional probability, Bayes' rule, probability functions, cumulative distribution functions, joint distributions, covariance, the binomial, hypergeometric, normal, and exponential distributions, transformation of variables, moment generating functions, the t-distribution, interval estimates, Cramér–Rao lower bounds, and one- and two-sample hypothesis tests.</p>
+              </div>
+              <div class="course-panel" id="c-praxis3" hidden>
+                <h4>Praxis III</h4>
+                <p>Praxis III was one of the most important and interesting courses of my undergraduate degree. Teams of three designed an autonomous mechanism that could deliver electric chargers to cars in a parking lot, tackled any way we wanted within a set of constraints. Beforehand, we completed workshops on rover fabrication, digital modelling, circuits and microcontrollers, motors and drivers, and interfacing. See the <a href="#projects">Projects</a> section for my team's solution, or <a href="./Content/praxisIII.pdf" target="_blank" rel="noopener">read the challenge rules</a>.</p>
+                <p>Due to the COVID-19 outbreak, the project could not be completed without access to building and testing facilities. Instead, I completed an individual project on PID control in MATLAB. PID control is essential in robotics to ensure a wheeled robot can travel as straight as possible. I successfully implemented PID control on a simulated robot while also incorporating compass control, which had a significant impact on its motion.</p>
+                <div class="link-row">
+                  <a class="btn btn-small" href="https://github.com/armaanlalani/PID_Controller" target="_blank" rel="noopener noreferrer"><i class="fab fa-github" aria-hidden="true"></i> Simulation code (run main_script.m)</a>
+                  <a class="btn btn-small" href="./Content/3.1_Armaan%20Lalani_Closed-Loop%20Controller.pdf" target="_blank" rel="noopener"><i class="fas fa-file-pdf" aria-hidden="true"></i> Controller report</a>
+                </div>
+              </div>
             </div>
+          </div>
+        </article>
+
+        <article class="edu-card edu-card-compact reveal">
+          <div class="edu-head">
+            <div>
+              <h3 class="edu-degree">Generative AI Fundamentals Professional Certificate</h3>
+              <p class="edu-school">Certification</p>
             </div>
-            
-            <div class="project-item">
-            <h3 class="project-title">NBA Data Pipeline</h3>
+            <p class="edu-date">Winter 2025</p>
+          </div>
+          <ul class="chips">
+            <li><span class="chip">Agile with AI</span></li>
+            <li><span class="chip">Beginning Llamafile</span></li>
+            <li><span class="chip">End to End LLM with Azure</span></li>
+            <li><span class="chip">Small Language Models</span></li>
+            <li><span class="chip">Using GenAI to Automate Software Development Tasks</span></li>
+            <li><span class="chip">Introduction to LLM Vulnerabilities</span></li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <!-- Projects -->
+    <section class="section section-alt" id="projects">
+      <div class="container">
+        <header class="section-head">
+          <p class="section-label">Projects</p>
+          <h2 class="section-title">Things I've built</h2>
+        </header>
+
+        <div class="project-grid">
+          <article class="project-card reveal">
             <p class="project-date">Summer 2024</p>
-            <div class="project-content">
-            </div>
-            </div>
-            
-            <div class="project-item">
+            <h3 class="project-title">NBA Data Pipeline</h3>
+            <ul class="tags"><li>Data Engineering</li><li>Sports Analytics</li></ul>
+          </article>
+
+          <article class="project-card reveal">
+            <p class="project-date">Winter 2020</p>
             <h3 class="project-title">Music Genre Predictor</h3>
-            <p class="project-date">Winter 2020</p>
-            <div class="project-content">
-            <span id="more_gp">
-              <p class="project-description">The course Introduction to Machine Intelligence provided me with the opportunity to collaborate with a peer on designing a project of our choice. My team member and I decided to pursue a project on predicting the genre of music using mel-spectrograms.</p>
-              <p class="project-description">Data Collection: The data collection process consisted of us collecting 30 second samples of various songs belonging to 7 genres of music. This was done using the Spotify API, the package youtube_dl, and a script that collected a random 30 second sample of the mp3 files. Following this, we utilized the library librosa to convert each 30 second sample into a mel-spectrogram (essentially an image representation of a music file in the frequency domain) which would then be passed through a neural network for training.</p>
-              <p class="project-description">Model Architecture: I lead the effort to design the models used for training, which consisted of a baseline CNN model, a more advanced CNN model, and finally a CRNN (Convolutional Recurrent Neural Network) model. Based on hyperparameter optimization, we were able to acheieve a test accuracy of roughly 79% compared to just 14% of guessing considering there were 7 music genres used. Visit the links below to review our project report and code.</p>
-              <div id="pid">
-                <button class="course-button" onclick="window.open('./Content/Final Report.pdf')">Project Report</button>
-                <button class="course-button" onclick="window.open('https://github.com/armaanlalani/Music-Genre-Classifier')">Code</button>
+            <p class="project-summary">Classifying songs into seven genres from mel-spectrograms with CNN and CRNN models, reaching roughly 79% test accuracy.</p>
+            <ul class="tags"><li>CNN</li><li>CRNN</li><li>Audio</li><li>Spotify API</li></ul>
+            <div class="project-actions">
+              <button type="button" class="btn btn-small btn-primary" data-open-project="p-genre">Details</button>
+              <a class="btn btn-small" href="./Content/Final%20Report.pdf" target="_blank" rel="noopener">Report</a>
+              <a class="btn btn-small" href="https://github.com/armaanlalani/Music-Genre-Classifier" target="_blank" rel="noopener noreferrer"><i class="fab fa-github" aria-hidden="true"></i> Code</a>
+            </div>
+            <template id="p-genre">
+              <p class="project-date">Winter 2020</p>
+              <h3>Music Genre Predictor</h3>
+              <p>Introduction to Machine Intelligence gave me the opportunity to collaborate with a peer on a project of our choice. We decided to predict the genre of music using mel-spectrograms.</p>
+              <h4>Data collection</h4>
+              <p>We collected 30-second samples of songs belonging to seven genres using the Spotify API, the youtube_dl package, and a script that extracted a random 30-second sample from each mp3 file. We then used librosa to convert each sample into a mel-spectrogram (essentially an image of the audio in the frequency domain) to train a neural network.</p>
+              <h4>Model architecture</h4>
+              <p>I led the design of the models, which included a baseline CNN, a more advanced CNN, and finally a CRNN (Convolutional Recurrent Neural Network). After hyperparameter optimization, we achieved a test accuracy of roughly 79%, compared to about 14% from random guessing across seven genres.</p>
+              <div class="link-row">
+                <a class="btn btn-small" href="./Content/Final%20Report.pdf" target="_blank" rel="noopener"><i class="fas fa-file-pdf" aria-hidden="true"></i> Project Report</a>
+                <a class="btn btn-small" href="https://github.com/armaanlalani/Music-Genre-Classifier" target="_blank" rel="noopener noreferrer"><i class="fab fa-github" aria-hidden="true"></i> Code</a>
               </div>
-            </span>
-              <button onclick="myFunction_gp()" id="moreBtn_gp" class="read-more-btn">Read More</button>
-            </div>
-            </div>
-            
-            <div class="project-item">
+            </template>
+          </article>
+
+          <article class="project-card reveal">
+            <p class="project-date">Winter 2020</p>
             <h3 class="project-title">3D Reconstruction</h3>
-            <p class="project-date">Winter 2020</p>
-            <div class="project-content">
-            <span id="more_ia">
-              <p class="project-description">The course Introduction to Image Analysis provided me with the opportunity to collaborate with two peers on reconstructing a 3D model from various 2D images. There was flexibility on how we chose to tackle this problem, and we originally researched using neural networks. However, there were various issues with this method including lack of an appropriate dataset containing both 2D images and 3D models and ground truth approximations using voxels would have been extremely difficult.</p>
-              <p class="project-description">As a result, our team pivoted to implementing reconstruction using stereo vision. This was done by applying various techniques including image rectification, developing disparity maps, utilizing epipoles, generating depth maps, and several others. This was done as a result of utilizing OpenCV functions as well as developing some of our own to assist with debugging. While the end result was not the most accurate, the project provided me with the opportuntiy to consolidate various techniques learned throughout the semester and enhanced my ability in utilizing OpenCV. Visit the links below to view our project report and code.</p>
-              <div id="pid">
-                <img src="./Content/3d pc.png" alt="3D Reconstruction visualization">
-                <button class="course-button" onclick="window.open('./Content/CSC420 Final Report.pdf')">Project Report</button>
-                <button class="course-button" onclick="window.open('https://github.com/armaanlalani/3D-Reconstruction')">Code</button>
-              </div>
-            </span>
-              <button onclick="myFunction_ia()" id="moreBtn_ia" class="read-more-btn">Read More</button>
+            <p class="project-summary">Reconstructing a 3D model from 2D images using stereo vision: rectification, disparity maps, and depth maps in OpenCV.</p>
+            <ul class="tags"><li>Computer Vision</li><li>Stereo Vision</li><li>OpenCV</li></ul>
+            <div class="project-actions">
+              <button type="button" class="btn btn-small btn-primary" data-open-project="p-3d">Details</button>
+              <a class="btn btn-small" href="./Content/CSC420%20Final%20Report.pdf" target="_blank" rel="noopener">Report</a>
+              <a class="btn btn-small" href="https://github.com/armaanlalani/3D-Reconstruction" target="_blank" rel="noopener noreferrer"><i class="fab fa-github" aria-hidden="true"></i> Code</a>
             </div>
-            </div>
-            
-            <div class="project-item">
-            <h3 class="project-title">Praxis III</h3>
-            <p class="project-date">Winter 2020</p>
-            <div class="project-content">
-            <span id="more_p3">
-              <p class="project-description">The basis of this course consisted of designing an autonomous robot, rover, etc. that could successfully deliver a charger to an electric car. The design had to follow certain restraints pertaining to setup, size restrictions, and power restrictions, however there was room for creativity in tackling this challenge. My team designed a rover that was capable of moving along the floor while also making use of a lead screw to provide motion in the z direction needed to reach charging ports of various heights.</p>
-              <p class="project-description">I was responsible for implementing Arduino code to allow for our robot to interact with its surroundings as well as design the primary layout of our robot prior to building it using CAD through Fusion. During the course of the project, I also assisted extensively in the construction of the rover as well as the electrical circuitry using a protoboard.</p>
-              <div id="pid">
-                <button class="course-button" onclick="window.open('./Content/TeamW08Proposal.pdf')">Project Proposal</button>
-                <button class="course-button" onclick="window.open('./Content/praxisIII.pdf')">Project Guidelines</button>
+            <template id="p-3d">
+              <p class="project-date">Winter 2020</p>
+              <h3>3D Reconstruction</h3>
+              <p>Introduction to Image Analysis gave me the opportunity to collaborate with two peers on reconstructing a 3D model from multiple 2D images. We originally researched neural networks, but ran into issues: there was no appropriate dataset containing both 2D images and 3D models, and approximating ground truth with voxels would have been extremely difficult.</p>
+              <p>We pivoted to reconstruction using stereo vision, applying techniques including image rectification, disparity maps, epipoles, and depth maps. We used OpenCV functions and developed some of our own to assist with debugging. While the end result was not the most accurate, the project let me consolidate techniques from throughout the semester and strengthened my ability with OpenCV.</p>
+              <img class="media" src="./Content/3d%20pc.png" alt="3D point cloud produced by the reconstruction">
+              <div class="link-row">
+                <a class="btn btn-small" href="./Content/CSC420%20Final%20Report.pdf" target="_blank" rel="noopener"><i class="fas fa-file-pdf" aria-hidden="true"></i> Project Report</a>
+                <a class="btn btn-small" href="https://github.com/armaanlalani/3D-Reconstruction" target="_blank" rel="noopener noreferrer"><i class="fab fa-github" aria-hidden="true"></i> Code</a>
               </div>
-              <p class="project-description">The videos below display our rover successfully delivering charge to a port. Additional pictures and components of the rover can be found in the slideshow above.</p>
-              <div id="pid">
-                <video width="480" height="360" controls>
-                  <source src="./Content/praxisIII.mp4" type="video/mp4">
+            </template>
+          </article>
+
+          <article class="project-card reveal">
+            <p class="project-date">Winter 2020</p>
+            <h3 class="project-title">Praxis III: Autonomous Charging Rover</h3>
+            <p class="project-summary">An autonomous rover with a lead screw for vertical reach that delivers chargers to electric cars' charging ports.</p>
+            <ul class="tags"><li>Arduino</li><li>CAD (Fusion)</li><li>Robotics</li></ul>
+            <div class="project-actions">
+              <button type="button" class="btn btn-small btn-primary" data-open-project="p-praxis3">Details</button>
+              <a class="btn btn-small" href="./Content/TeamW08Proposal.pdf" target="_blank" rel="noopener">Proposal</a>
+            </div>
+            <template id="p-praxis3">
+              <p class="project-date">Winter 2020</p>
+              <h3>Praxis III: Autonomous Charging Rover</h3>
+              <p>The course challenged us to design an autonomous robot or rover that could successfully deliver a charger to an electric car. Designs had to follow constraints on setup, size, and power, but there was room for creativity. My team designed a rover that moves along the floor and uses a lead screw to provide motion in the z-direction, reaching charging ports of various heights.</p>
+              <p>I was responsible for the Arduino code that let our robot interact with its surroundings, and for designing the primary layout of the robot in CAD using Fusion before building it. I also assisted extensively with constructing the rover and wiring its circuitry on a protoboard.</p>
+              <p>The video below shows our rover successfully delivering charge to a port.</p>
+              <video class="media" controls preload="metadata">
+                <source src="./Content/praxisIII.mp4" type="video/mp4">
                 Your browser does not support the video tag.
-                </video>
+              </video>
+              <div class="link-row">
+                <a class="btn btn-small" href="./Content/TeamW08Proposal.pdf" target="_blank" rel="noopener"><i class="fas fa-file-pdf" aria-hidden="true"></i> Project Proposal</a>
+                <a class="btn btn-small" href="./Content/praxisIII.pdf" target="_blank" rel="noopener"><i class="fas fa-file-pdf" aria-hidden="true"></i> Project Guidelines</a>
               </div>
-            </span>
-              <button onclick="myFunction_p3()" id="moreBtn_p3" class="read-more-btn">Read More</button>
-            </div>
-            </div>
-            
-            <div class="project-item">
+            </template>
+          </article>
+
+          <article class="project-card reveal">
+            <p class="project-date">Winter 2019</p>
             <h3 class="project-title">U of T Biomedical Engineering Competition</h3>
-            <p class="project-date">Winter 2019</p>
-            <div class="project-content">
-            <span id="more_be">
-              <p class="project-description">I competed in the U of T Biomedical Engineering Competition with a group of three other students in Engineering Science. In 2019, the competition called for participants to design a solution to improve the quality of life of children suffering from Congenital Insensitivity to Pain with Anhidrosis (CIPA) which is an extremely rare condition preventing the sensation of pain and temperature. This can often lead to children harming themselves unknowlingly leading to early deaths. The competition consisted of a conducting research and developing a presentation about the proposed solution and first presenting it to the competition coordinators followed by industry experts.</p>
-              <p class="project-description">My team and I recognized from the beginning that several teams would attempt to implement monitoring systems to prevent children from interacting with anything that could be potentially dangerous if their parents are not around. My team and I decided to take a different approach by completing extensive research around Liquid Crystalline Elastomers (LCEs). LCEs are biomaterials that can change form base on temperature. My team and I decided to use these materials to build LCE utensils which would change form if a particular food was either too hot or too cold. For example, if a child with CIPA places their spoon in soup that would burn their palates, the spoon after being exposed to this liquid would change shape making it effectively unusable and preventing the child from consuming the soup. Visit the link below for more information on the project.</p>
-              <div id="pid">
-                <button class="course-button" onclick="window.open('./Content/CIPA.pdf')">Presentation PowerPoint</button>
+            <p class="project-summary">Temperature-responsive utensils made from liquid crystalline elastomers to protect children living with CIPA.</p>
+            <ul class="tags"><li>Biomaterials</li><li>Research</li><li>Design</li></ul>
+            <div class="project-actions">
+              <button type="button" class="btn btn-small btn-primary" data-open-project="p-bme">Details</button>
+              <a class="btn btn-small" href="./Content/CIPA.pdf" target="_blank" rel="noopener">Presentation</a>
+            </div>
+            <template id="p-bme">
+              <p class="project-date">Winter 2019</p>
+              <h3>U of T Biomedical Engineering Competition</h3>
+              <p>I competed in the U of T Biomedical Engineering Competition with three other Engineering Science students. The 2019 competition asked participants to design a solution to improve the quality of life of children with Congenital Insensitivity to Pain with Anhidrosis (CIPA), an extremely rare condition that prevents the sensation of pain and temperature. This can lead children to unknowingly harm themselves, often leading to early deaths. Teams researched and developed a presentation of their proposed solution, presenting first to the competition coordinators and then to industry experts.</p>
+              <p>We recognized early on that many teams would propose monitoring systems to keep children away from anything dangerous when their parents are not around, so we took a different approach. We researched Liquid Crystalline Elastomers (LCEs), biomaterials that change form based on temperature, and proposed LCE utensils that change shape if food is too hot or too cold. For example, if a child with CIPA places their spoon in soup hot enough to burn, the spoon changes shape, making it effectively unusable and preventing them from consuming the soup.</p>
+              <div class="link-row">
+                <a class="btn btn-small" href="./Content/CIPA.pdf" target="_blank" rel="noopener"><i class="fas fa-file-pdf" aria-hidden="true"></i> Presentation</a>
               </div>
-            </span>
-            <button onclick="myFunction_be()" id="moreBtn_be" class="read-more-btn">Read More</button>
-            </div>
-            </div>
-            
-            <div class="project-item">
-            <h3 class="project-title">Praxis II</h3>
+            </template>
+          </article>
+
+          <article class="project-card reveal">
             <p class="project-date">Winter 2019</p>
-            <div class="project-content">
-            <span id="more_p2">
-              <p class="project-description">The projects completed during Praxis II were extremely rigorous and focused primarily on the engineering design process. The first half of the course involved reaching out to a particular community and recognizing an opportunity to utilize the engineering design process to positively impact some aspect of that community. Within a group of four, we visited Out of the Cold, an initiative that allows homeless people to spend a night at a local church during winter months. My team and I had the opportunity to perform a site visit while interacting with many of the staff and residents to gain a better understanding of their operations. Following a site visit and extensive research, my team and I wrote a Request for Proposal centered around security and comfort for temporary residents of the churches.</p>
-              <div id="pid">
-                <button class="course-button" onclick="window.open('./Content/RFP.pdf')">Request for Proposal</button>
+            <h3 class="project-title">Praxis II: Community Design</h3>
+            <p class="project-summary">A Request for Proposal for Out of the Cold, and a push-along mechanism that collects shuttlecocks for a local badminton club.</p>
+            <ul class="tags"><li>Engineering Design</li><li>CAD</li><li>Laser Cutting</li></ul>
+            <div class="project-actions">
+              <button type="button" class="btn btn-small btn-primary" data-open-project="p-praxis2">Details</button>
+              <a class="btn btn-small" href="./Content/RFP.pdf" target="_blank" rel="noopener">RFP</a>
+            </div>
+            <template id="p-praxis2">
+              <p class="project-date">Winter 2019</p>
+              <h3>Praxis II: Community Design</h3>
+              <p>The projects in Praxis II were extremely rigorous and focused primarily on the engineering design process. The first half of the course involved reaching out to a community and identifying an opportunity to positively impact it through engineering design. In a group of four, we visited Out of the Cold, an initiative that allows people experiencing homelessness to spend the night at a local church during the winter months. After a site visit, conversations with staff and residents, and extensive research, we wrote a Request for Proposal centered on security and comfort for temporary residents of the churches.</p>
+              <div class="link-row">
+                <a class="btn btn-small" href="./Content/RFP.pdf" target="_blank" rel="noopener"><i class="fas fa-file-pdf" aria-hidden="true"></i> Request for Proposal</a>
               </div>
-              <p class="project-description">The second half of the course involved targetting a specific RFP chosen by course instructors. My team and I chose to look into the issue of collecting shuttlecocks at a local badminton club after individual drills. The process of picking up all the shuttlecocks by hand is extremely time consuming and often limits practice time of members of the club. Keeping this issue in mind as well as the various restraints set out in the RFP, my team and I decided to create a machine that would be pushed along the ground and gather shuttlecocks as it moved. This design decision was supported by research and a site visit and was eventually presented to course instructors and TA's.</p>
-              <p class="project-description">The construction of our mechanism assisted me in developing a number of important skills including:</p>
-              <ul class="listup">
-                <li class="list"><h5 class="project-title" style="font-size: 1.1rem; margin-bottom: 0.5rem;">Mechanical Design</h5>The entire mechanism was built using mainly wood and glue. The design required a very high degree of precision as it needed to travel seamlessly on the ground which was acheived using laser cuts and CAD.</li>
-                <li class="list"><h5 class="project-title" style="font-size: 1.1rem; margin-bottom: 0.5rem;">CAD</h5>Working on this project first exposed me to CAD and 3D printing which were extremely beneficial skills for projects to follow.</li>
-                <li class="list"><video width="260" height="200" controls><source src="./Content/video.mp4" type="video/mp4">
-                  Your browser does not support the video tag.
-                  </video></li>
-              </ul>
-            </span>
-            <button onclick="myFunction_p2()" id="moreBtn_p2" class="read-more-btn">Read More</button>
-            </div>
-            </div>
-        </section>
-        <section id="contact">
-          <div class="section-container">
-          <h2 class="section-title">Contact</h2>
-          <p class="section-intro">Feel free to contact me if you have any questions about my experience or want to learn more.</p>
-          <form id="contact-form">      
-            <input name="name" type="text" class="feedback-input" placeholder="Name" required />   
-            <input name="email" type="email" class="feedback-input" placeholder="Email" required />
-            <textarea name="message" class="feedback-input" placeholder="Message" required></textarea>
-            <input type="submit" value="SUBMIT"/>
-          </form>
-          <div id="form-status" style="display: none; margin-top: 1rem; padding: 1rem; border-radius: 8px; text-align: center;"></div>
+              <p>The second half involved addressing a specific RFP chosen by the course instructors. We chose the problem of collecting shuttlecocks at a local badminton club after drills: picking them up by hand is extremely time-consuming and limits members' practice time. Keeping the RFP's constraints in mind, we designed a machine that is pushed along the ground and gathers shuttlecocks as it moves. The design was supported by research and a site visit, and was presented to the course instructors and TAs.</p>
+              <h4>Skills developed</h4>
+              <dl class="skills">
+                <div><dt>Mechanical Design</dt><dd>The mechanism was built mainly from wood and glue and needed to travel seamlessly along the ground, which required a high degree of precision achieved with laser cutting and CAD.</dd></div>
+                <div><dt>CAD</dt><dd>This project was my first exposure to CAD and 3D printing, both extremely useful skills for the projects that followed.</dd></div>
+              </dl>
+              <video class="media" controls preload="metadata">
+                <source src="./Content/video.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+              </video>
+            </template>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="section" id="contact">
+      <div class="container contact-grid">
+        <div>
+          <p class="section-label">Contact</p>
+          <h2 class="section-title">Let's connect</h2>
+          <p>Feel free to contact me if you have any questions about my experience or want to learn more.</p>
+          <ul class="contact-links">
+            <li><a href="https://www.linkedin.com/in/armaan-lalani/" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin" aria-hidden="true"></i> linkedin.com/in/armaan-lalani</a></li>
+            <li><a href="https://github.com/armaanlalani" target="_blank" rel="noopener noreferrer"><i class="fab fa-github" aria-hidden="true"></i> github.com/armaanlalani</a></li>
+          </ul>
+        </div>
+        <form id="contact-form" class="contact-form" novalidate>
+          <div class="field">
+            <label for="cf-name">Name</label>
+            <input id="cf-name" name="name" type="text" autocomplete="name" required>
           </div>
-        </section>
-        <script src="script_al.js" defer></script>
-    </body>
-    
+          <div class="field">
+            <label for="cf-email">Email</label>
+            <input id="cf-email" name="email" type="email" autocomplete="email" required>
+          </div>
+          <div class="field">
+            <label for="cf-message">Message</label>
+            <textarea id="cf-message" name="message" rows="5" required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary btn-block">Send message</button>
+          <p id="form-status" class="form-status" role="status" aria-live="polite" hidden></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© <span id="year">2026</span> Armaan Lalani</p>
+      <div class="footer-links">
+        <a href="https://www.linkedin.com/in/armaan-lalani/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="fab fa-linkedin" aria-hidden="true"></i></a>
+        <a href="https://github.com/armaanlalani" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="fab fa-github" aria-hidden="true"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <button type="button" id="to-top" class="to-top" aria-label="Back to top">
+    <i class="fas fa-arrow-up" aria-hidden="true"></i>
+  </button>
+
+  <dialog id="project-dialog" class="project-dialog" aria-labelledby="dialog-title">
+    <div class="dialog-inner">
+      <button type="button" class="icon-btn dialog-close" data-close-dialog aria-label="Close">
+        <i class="fas fa-xmark" aria-hidden="true"></i>
+      </button>
+      <div class="dialog-body" id="dialog-body"></div>
+    </div>
+  </dialog>
+
+  <script src="script_al.js" defer></script>
+</body>
 </html>
